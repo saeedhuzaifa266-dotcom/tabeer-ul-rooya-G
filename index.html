@@ -5,1584 +5,687 @@
 <meta charset="UTF-8">
 
 <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+name="viewport"
+content="width=device-width, initial-scale=1.0, viewport-fit=cover"
 >
 
-<meta
-    name="theme-color"
-    content="#064e3b"
->
+<meta name="theme-color" content="#064e3b">
 
-<title>
-تعبیر الرؤیا — پیشکش: حذیفہ سعید
-</title>
-
-
-<!-- Urdu Fonts -->
+<title>تعبیر الرؤیا — پیشکش: حذیفہ سعید</title>
 
 <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+rel="stylesheet"
 >
-
-
-<!-- FontAwesome -->
 
 <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 >
-
 
 <style>
 
-:root {
-
-    --bg-dark: #070d17;
-
-    --primary-emerald: #064e3b;
-
-    --primary-green: #047857;
-
-    --accent-gold: #d97706;
-
-    --accent-gold-light: #fef3c7;
-
-    --accent-gold-border: #f59e0b;
-
-    --bg-color: #f8fafc;
-
-    --card-bg: #ffffff;
-
-    --text-main: #0f172a;
-
-    --text-muted: #475569;
-
-    --border-color: #e2e8f0;
-
+:root{
+--dark:#06110f;
+--green:#064e3b;
+--green2:#047857;
+--gold:#d97706;
+--gold2:#f59e0b;
+--bg:#f8fafc;
+--card:#ffffff;
+--text:#0f172a;
+--muted:#64748b;
+--border:#e2e8f0;
 }
 
-
-/* ==============================
-   GLOBAL
-============================== */
-
-* {
-
-    box-sizing: border-box;
-
-    margin: 0;
-
-    padding: 0;
-
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-
-html,
-body {
-
-    width: 100%;
-
-    min-height: 100%;
-
+html,body{
+width:100%;
+min-height:100%;
 }
 
+body{
+background:var(--dark);
+font-family:
+'Noto Nastaliq Urdu',
+'Noto Sans Arabic',
+serif;
 
-body {
+display:flex;
+justify-content:center;
+align-items:center;
 
-    background-color:
-        var(--bg-dark);
-
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-    align-items:
-        center;
-
-    min-height:
-        100vh;
-
-    min-height:
-        100dvh;
-
-    padding:
-        8px;
-
-    font-family:
-        'Noto Nastaliq Urdu',
-        'Noto Sans Arabic',
-        serif;
-
+min-height:100vh;
+min-height:100dvh;
 }
 
+.app{
+width:100%;
+max-width:470px;
+height:100vh;
+height:100dvh;
 
-/* ==============================
-   APP
-============================== */
+background:var(--bg);
 
-.app-frame {
+display:flex;
+flex-direction:column;
 
-    width:
-        100%;
-
-    max-width:
-        460px;
-
-    height:
-        calc(100vh - 16px);
-
-    height:
-        calc(100dvh - 16px);
-
-    max-height:
-        940px;
-
-    background-color:
-        var(--bg-color);
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    box-shadow:
-        0 25px 60px -12px
-        rgba(0, 0, 0, 0.75);
-
-    border-radius:
-        28px;
-
-    overflow:
-        hidden;
-
-    position:
-        relative;
-
-    border:
-        1px solid
-        rgba(
-            255,
-            255,
-            255,
-            0.1
-        );
-
+overflow:hidden;
 }
 
+.header{
+flex-shrink:0;
 
-/* ==============================
-   HEADER
-============================== */
+background:
+linear-gradient(
+145deg,
+#022c22,
+#064e3b
+);
 
-.app-header {
+border-bottom:3px solid var(--gold);
 
-    flex-shrink:
-        0;
+padding:16px;
 
-    background:
-        linear-gradient(
-            145deg,
-            #022c22,
-            #064e3b
-        );
+color:white;
 
-    color:
-        #ffffff;
+text-align:center;
 
-    padding:
-        18px
-        18px
-        15px;
-
-    text-align:
-        center;
-
-    box-shadow:
-        0 4px 20px
-        rgba(0,0,0,0.15);
-
-    position:
-        relative;
-
-    border-bottom:
-        2.5px solid
-        var(--accent-gold);
-
+box-shadow:
+0 5px 20px
+rgba(0,0,0,.18);
 }
 
-
-.header-top-bar {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        auto
-        1fr
-        auto;
-
-    align-items:
-        center;
-
-    gap:
-        8px;
-
-    margin-bottom:
-        5px;
-
+.header-row{
+display:grid;
+grid-template-columns:auto 1fr auto;
+align-items:center;
+gap:8px;
 }
 
-
-.header-actions {
-
-    display:
-        flex;
-
-    gap:
-        6px;
-
+.header h1{
+color:#fbbf24;
+font-size:25px;
+font-weight:700;
 }
 
-
-.icon-btn {
-
-    background:
-        rgba(
-            255,
-            255,
-            255,
-            0.10
-        );
-
-    border:
-        1px solid
-        rgba(
-            217,
-            119,
-            6,
-            0.45
-        );
-
-    color:
-        #fef08a;
-
-    width:
-        39px;
-
-    height:
-        39px;
-
-    border-radius:
-        12px;
-
-    cursor:
-        pointer;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    font-size:
-        15px;
-
+.header-actions{
+display:flex;
+gap:7px;
 }
 
+.icon-btn{
+width:42px;
+height:42px;
 
-.icon-btn:active {
+border-radius:13px;
 
-    transform:
-        scale(0.92);
+border:
+1px solid
+rgba(245,158,11,.55);
 
+background:
+rgba(255,255,255,.08);
+
+color:#fde68a;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:16px;
+
+cursor:pointer;
 }
 
+.tag{
+display:inline-block;
 
-.app-header h1 {
+margin-top:5px;
 
-    font-size:
-        24px;
+padding:4px 20px;
 
-    line-height:
-        1.7;
+border:
+1px solid var(--gold2);
 
-    color:
-        #fbbf24;
+border-radius:30px;
 
-    font-weight:
-        700;
+color:#fef3c7;
 
-    text-shadow:
-        0 2px 4px
-        rgba(0,0,0,0.3);
+background:
+rgba(217,119,6,.16);
 
+font-size:11px;
 }
 
+.main{
+flex:1;
+overflow-y:auto;
 
-.developer-tag {
+padding:15px;
 
-    font-family:
-        'Noto Sans Arabic',
-        sans-serif;
+display:flex;
+flex-direction:column;
 
-    font-size:
-        11px;
+gap:15px;
 
-    background:
-        rgba(
-            217,
-            119,
-            6,
-            0.18
-        );
-
-    color:
-        #fef3c7;
-
-    display:
-        inline-block;
-
-    padding:
-        4px
-        18px;
-
-    border-radius:
-        20px;
-
-    border:
-        1px solid
-        var(--accent-gold-border);
-
-    margin-top:
-        3px;
-
+scroll-behavior:smooth;
 }
 
+.welcome{
+background:
+linear-gradient(
+135deg,
+#ffffff,
+#f0fdf4
+);
 
-/* ==============================
-   MAIN
-============================== */
+border:
+1px solid #bbf7d0;
 
-.main-scroll {
+border-right:
+5px solid var(--green2);
 
-    flex:
-        1;
+border-radius:18px;
 
-    padding:
-        15px;
+padding:16px;
 
-    overflow-y:
-        auto;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    gap:
-        15px;
-
-    scroll-behavior:
-        smooth;
-
+box-shadow:
+0 4px 15px
+rgba(0,0,0,.04);
 }
 
-
-/* ==============================
-   WELCOME
-============================== */
-
-.welcome-card {
-
-    background:
-        linear-gradient(
-            135deg,
-            #ffffff,
-            #f0fdf4
-        );
-
-    padding:
-        16px
-        18px;
-
-    border-radius:
-        17px;
-
-    box-shadow:
-        0 4px 12px
-        rgba(0,0,0,0.04);
-
-    border:
-        1px solid
-        #d1fae5;
-
-    border-right:
-        5px solid
-        var(--primary-green);
-
+.welcome h2{
+font-size:16px;
+color:var(--green);
+margin-bottom:8px;
 }
 
-
-.welcome-card h2 {
-
-    font-size:
-        15px;
-
-    color:
-        var(--primary-emerald);
-
-    margin-bottom:
-        7px;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    gap:
-        7px;
-
+.welcome p{
+font-size:12.5px;
+line-height:2.25;
+color:#475569;
 }
 
+.note{
+margin-top:11px;
 
-.welcome-card p {
+background:#fffbeb;
 
-    font-size:
-        12.5px;
+border:
+1px solid #fde68a;
 
-    line-height:
-        2.25;
+border-radius:12px;
 
-    color:
-        var(--text-muted);
+padding:11px;
 
+color:#78350f;
+
+font-size:11.5px;
+
+line-height:2.1;
 }
 
+.poll-card,
+.input-card,
+.result-card,
+.loader-card,
+.tip-card{
 
-.important-note {
+background:white;
 
-    margin-top:
-        10px;
+border:
+1px solid var(--border);
 
-    padding:
-        10px
-        12px;
+border-radius:18px;
 
-    background:
-        #fffbeb;
+padding:16px;
 
-    border:
-        1px solid
-        #fde68a;
-
-    border-radius:
-        11px;
-
-    color:
-        #78350f;
-
-    font-size:
-        11.5px;
-
-    line-height:
-        2.1;
-
+box-shadow:
+0 4px 14px
+rgba(0,0,0,.035);
 }
 
-
-/* ==============================
-   POLLS
-============================== */
-
-.poll-card {
-
-    background:
-        var(--card-bg);
-
-    padding:
-        16px;
-
-    border-radius:
-        18px;
-
-    box-shadow:
-        0 4px 14px
-        rgba(0,0,0,0.035);
-
-    border:
-        1px solid
-        var(--border-color);
-
+.poll-group{
+margin-bottom:15px;
 }
 
-
-.poll-group {
-
-    margin-bottom:
-        15px;
-
+.poll-label{
+font-size:12.5px;
+font-weight:bold;
+color:var(--green);
+margin-bottom:8px;
 }
 
-
-.poll-label {
-
-    font-size:
-        12.5px;
-
-    font-weight:
-        bold;
-
-    color:
-        var(--primary-emerald);
-
-    margin-bottom:
-        8px;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    gap:
-        7px;
-
+.poll-options{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:7px;
 }
 
+.poll-btn{
+min-height:42px;
 
-.poll-options {
+border:
+1.5px solid #cbd5e1;
 
-    display:
-        grid;
+background:#f8fafc;
 
-    grid-template-columns:
-        repeat(
-            3,
-            1fr
-        );
+border-radius:12px;
 
-    gap:
-        7px;
+font-size:11px;
 
+font-weight:600;
+
+cursor:pointer;
+
+color:var(--text);
 }
 
+.poll-btn.selected{
+background:
+linear-gradient(
+135deg,
+var(--green),
+var(--green2)
+);
 
-.poll-btn {
+color:white;
 
-    background:
-        #f8fafc;
+border-color:var(--green);
 
-    border:
-        1.5px solid
-        #cbd5e1;
-
-    min-height:
-        42px;
-
-    padding:
-        7px
-        4px;
-
-    border-radius:
-        12px;
-
-    font-size:
-        11px;
-
-    color:
-        var(--text-main);
-
-    cursor:
-        pointer;
-
-    font-weight:
-        600;
-
+box-shadow:
+0 3px 9px
+rgba(4,120,87,.3);
 }
 
+.more-btn{
+width:100%;
 
-.poll-btn.selected {
+border:
+1px dashed #94a3b8;
 
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary-emerald),
-            var(--primary-green)
-        );
+background:#f1f5f9;
 
-    color:
-        white;
+color:var(--green);
 
-    border-color:
-        var(--primary-emerald);
+padding:10px;
 
-    box-shadow:
-        0 3px 8px
-        rgba(
-            4,
-            120,
-            87,
-            0.30
-        );
+border-radius:12px;
 
+font-size:11.5px;
+
+font-weight:bold;
+
+cursor:pointer;
 }
 
+.advanced{
+max-height:0;
+overflow:hidden;
 
-/* ==============================
-   ADVANCED
-============================== */
-
-.more-details-toggle {
-
-    width:
-        100%;
-
-    background:
-        #f1f5f9;
-
-    border:
-        1px dashed
-        #94a3b8;
-
-    color:
-        var(--primary-emerald);
-
-    padding:
-        9px;
-
-    border-radius:
-        12px;
-
-    font-size:
-        11.5px;
-
-    cursor:
-        pointer;
-
-    font-weight:
-        bold;
-
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-    align-items:
-        center;
-
-    gap:
-        8px;
-
+transition:
+max-height .35s ease;
 }
 
-
-.collapsible-content {
-
-    max-height:
-        0;
-
-    overflow:
-        hidden;
-
-    transition:
-        max-height
-        0.35s ease;
-
+.advanced.open{
+max-height:450px;
+margin-top:14px;
 }
 
+.input-card label{
+display:block;
 
-.collapsible-content.open {
+font-size:14px;
 
-    max-height:
-        420px;
+font-weight:bold;
 
-    margin-top:
-        13px;
+color:var(--green);
 
+margin-bottom:9px;
 }
 
+textarea{
+width:100%;
 
-/* ==============================
-   INPUT
-============================== */
+min-height:145px;
 
-.input-card {
+border:
+1.5px solid #cbd5e1;
 
-    background:
-        var(--card-bg);
+border-radius:15px;
 
-    padding:
-        16px;
+padding:13px;
 
-    border-radius:
-        18px;
+font-size:13.5px;
 
-    box-shadow:
-        0 4px 14px
-        rgba(0,0,0,0.035);
+line-height:2.2;
 
-    border:
-        1px solid
-        var(--border-color);
+resize:vertical;
 
+outline:none;
+
+background:#fafafa;
 }
 
+textarea:focus{
+border-color:var(--green2);
 
-.input-card label {
+background:white;
 
-    font-size:
-        13px;
-
-    font-weight:
-        bold;
-
-    color:
-        var(--primary-emerald);
-
-    margin-bottom:
-        8px;
-
-    display:
-        block;
-
+box-shadow:
+0 0 0 3px
+rgba(4,120,87,.12);
 }
 
+.submit{
+width:100%;
 
-textarea {
+margin-top:13px;
 
-    width:
-        100%;
+border:0;
 
-    min-height:
-        135px;
+border-radius:14px;
 
-    border:
-        1.5px solid
-        #cbd5e1;
+padding:14px;
 
-    border-radius:
-        14px;
+background:
+linear-gradient(
+135deg,
+#e9a85f,
+#d98c4f
+);
 
-    padding:
-        12px;
+color:white;
 
-    font-size:
-        13.5px;
+font-size:14px;
 
-    line-height:
-        2.2;
+font-weight:bold;
 
-    resize:
-        vertical;
+cursor:pointer;
 
-    outline:
-        none;
-
-    background:
-        #fafafa;
-
-    color:
-        #0f172a;
-
+box-shadow:
+0 5px 15px
+rgba(217,119,6,.25);
 }
 
-
-textarea:focus {
-
-    border-color:
-        var(--primary-green);
-
-    background:
-        #ffffff;
-
-    box-shadow:
-        0 0 0 3px
-        rgba(
-            4,
-            120,
-            87,
-            0.12
-        );
-
+.submit:disabled{
+opacity:.55;
 }
 
-
-/* ==============================
-   SUBMIT
-============================== */
-
-.submit-btn {
-
-    width:
-        100%;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--accent-gold),
-            #b45309
-        );
-
-    color:
-        #ffffff;
-
-    border:
-        none;
-
-    padding:
-        13px;
-
-    border-radius:
-        14px;
-
-    font-size:
-        14px;
-
-    cursor:
-        pointer;
-
-    margin-top:
-        12px;
-
-    font-weight:
-        bold;
-
-    box-shadow:
-        0 4px 14px
-        rgba(
-            217,
-            119,
-            6,
-            0.30
-        );
-
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-    align-items:
-        center;
-
-    gap:
-        10px;
-
+.loader-card{
+display:none;
+text-align:center;
 }
 
+.spinner{
+width:42px;
+height:42px;
 
-.submit-btn:disabled {
+border:
+4px solid #edf2f7;
 
-    opacity:
-        0.60;
+border-top:
+4px solid var(--gold);
 
-    cursor:
-        not-allowed;
+border-radius:50%;
 
+animation:spin .85s linear infinite;
+
+margin:0 auto 13px;
 }
 
-
-/* ==============================
-   LOADER
-============================== */
-
-.loader-box {
-
-    display:
-        none;
-
-    text-align:
-        center;
-
-    padding:
-        23px;
-
-    background:
-        var(--card-bg);
-
-    border-radius:
-        18px;
-
-    border:
-        1px solid
-        var(--border-color);
-
+@keyframes spin{
+to{
+transform:rotate(360deg);
+}
 }
 
-
-.spinner {
-
-    width:
-        40px;
-
-    height:
-        40px;
-
-    border:
-        4px solid
-        #f1f5f9;
-
-    border-top:
-        4px solid
-        var(--accent-gold);
-
-    border-radius:
-        50%;
-
-    animation:
-        spin
-        0.9s linear infinite;
-
-    margin:
-        0 auto 12px;
-
+.loader-text{
+font-size:12px;
+line-height:2;
+font-weight:600;
+color:var(--green);
 }
 
+.loader-sub{
+margin-top:6px;
 
-@keyframes spin {
+font-family:
+'Noto Sans Arabic',
+sans-serif;
 
-    from {
+font-size:10px;
 
-        transform:
-            rotate(0deg);
-
-    }
-
-    to {
-
-        transform:
-            rotate(360deg);
-
-    }
-
+color:var(--muted);
 }
 
-
-.loader-text {
-
-    font-size:
-        12px;
-
-    line-height:
-        2;
-
-    color:
-        var(--primary-emerald);
-
-    font-weight:
-        600;
-
+.result-card{
+display:none;
 }
 
+.result-head{
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-.model-progress {
+padding-bottom:9px;
 
-    font-family:
-        'Noto Sans Arabic',
-        sans-serif;
+margin-bottom:12px;
 
-    font-size:
-        10px;
+border-bottom:
+2px solid #f1f5f9;
 
-    margin-top:
-        7px;
+color:var(--green);
 
-    color:
-        #64748b;
+font-size:14px;
 
+font-weight:bold;
 }
 
-
-/* ==============================
-   RESULT
-============================== */
-
-.result-card {
-
-    background:
-        var(--card-bg);
-
-    padding:
-        18px;
-
-    border-radius:
-        18px;
-
-    box-shadow:
-        0 6px 20px
-        rgba(0,0,0,0.06);
-
-    display:
-        none;
-
-    border:
-        1px solid
-        #d1fae5;
-
+.result-status{
+font-size:10px;
+color:#10b981;
 }
 
+.result-text{
+white-space:pre-wrap;
 
-.result-header {
+font-size:13px;
 
-    font-size:
-        14px;
+line-height:2.5;
 
-    font-weight:
-        bold;
-
-    color:
-        var(--primary-emerald);
-
-    border-bottom:
-        2px solid
-        #f1f5f9;
-
-    padding-bottom:
-        9px;
-
-    margin-bottom:
-        13px;
-
-    display:
-        flex;
-
-    justify-content:
-        space-between;
-
-    align-items:
-        center;
-
-    gap:
-        8px;
-
+color:var(--text);
 }
 
+.actions{
+display:flex;
+gap:8px;
 
-.result-status {
-
-    font-family:
-        'Noto Sans Arabic',
-        sans-serif;
-
-    font-size:
-        10px;
-
-    color:
-        #10b981;
-
+margin-top:15px;
 }
 
+.action-btn{
+flex:1;
 
-.result-body {
+padding:10px;
 
-    font-size:
-        13px;
+border-radius:11px;
 
-    line-height:
-        2.5;
+border:
+1px solid #cbd5e1;
 
-    color:
-        var(--text-main);
+background:#f8fafc;
 
-    margin-bottom:
-        16px;
+font-size:11px;
 
-    white-space:
-        pre-wrap;
+font-weight:bold;
 
-    word-wrap:
-        break-word;
-
+cursor:pointer;
 }
 
-
-.action-bar {
-
-    display:
-        flex;
-
-    gap:
-        8px;
-
-    margin-bottom:
-        14px;
-
+.whatsapp{
+background:#25d366;
+color:white;
+border-color:#128c7e;
 }
 
+.advice{
+margin-top:15px;
 
-.action-btn {
+background:#fffbeb;
 
-    flex:
-        1;
+border:
+1px solid #fde68a;
 
-    padding:
-        9px;
+border-radius:12px;
 
-    border-radius:
-        10px;
+padding:12px;
 
-    border:
-        1.5px solid
-        #cbd5e1;
+font-size:11.5px;
 
-    background:
-        #f8fafc;
+line-height:2.1;
 
-    color:
-        var(--text-main);
-
-    font-size:
-        11px;
-
-    cursor:
-        pointer;
-
-    font-weight:
-        bold;
-
+color:#92400e;
 }
 
+.tip-card{
+background:
+linear-gradient(
+135deg,
+#f0fdf4,
+#dcfce7
+);
 
-.action-btn.whatsapp {
-
-    background:
-        #25d366;
-
-    color:
-        white;
-
-    border-color:
-        #128c7e;
-
+border-color:#bbf7d0;
 }
 
-
-/* ==============================
-   ADVICE
-============================== */
-
-.advice-box {
-
-    background:
-        #fffbeb;
-
-    border:
-        1px solid
-        #fef3c7;
-
-    border-radius:
-        12px;
-
-    padding:
-        12px;
-
-    font-size:
-        11.5px;
-
-    color:
-        #92400e;
-
-    line-height:
-        2.1;
-
+.tip-card h3{
+font-size:14px;
+color:var(--green);
+margin-bottom:6px;
 }
 
-
-.advice-box strong {
-
-    display:
-        block;
-
-    color:
-        #78350f;
-
+.tip-card p{
+font-size:11.5px;
+line-height:2.1;
+color:#475569;
 }
 
+.modal{
+display:none;
 
-/* ==============================
-   PRINCIPLE
-============================== */
+position:absolute;
 
-.daily-tip {
+inset:0;
 
-    background:
-        linear-gradient(
-            135deg,
-            #f0fdf4,
-            #dcfce7
-        );
+z-index:100;
 
-    padding:
-        14px;
+background:
+rgba(0,0,0,.65);
 
-    border-radius:
-        16px;
+backdrop-filter:
+blur(4px);
 
-    border:
-        1px solid
-        #bbf7d0;
-
+align-items:flex-end;
 }
 
+.modal-box{
+width:100%;
 
-.daily-tip h3 {
+max-height:85%;
 
-    font-size:
-        13px;
+overflow-y:auto;
 
-    color:
-        var(--primary-emerald);
+background:white;
 
+border-radius:
+25px 25px 0 0;
+
+padding:20px;
 }
 
+.modal-head{
+display:flex;
+align-items:center;
+justify-content:space-between;
 
-.daily-tip p {
+padding-bottom:10px;
 
-    font-size:
-        11.5px;
+margin-bottom:14px;
 
-    color:
-        var(--text-muted);
+border-bottom:
+1px solid var(--border);
 
-    line-height:
-        2.1;
+color:var(--green);
 
+font-weight:bold;
 }
 
+.close{
+width:38px;
+height:38px;
 
-/* ==============================
-   MODAL
-============================== */
+border:
+1px solid var(--border);
 
-.modal-overlay {
+background:#f8fafc;
 
-    display:
-        none;
+border-radius:11px;
 
-    position:
-        absolute;
-
-    inset:
-        0;
-
-    background:
-        rgba(0,0,0,0.68);
-
-    z-index:
-        100;
-
-    justify-content:
-        center;
-
-    align-items:
-        flex-end;
-
-    backdrop-filter:
-        blur(4px);
-
+cursor:pointer;
 }
 
+.history-item{
+background:#f8fafc;
 
-.modal-body {
+border:
+1px solid var(--border);
 
-    background:
-        #ffffff;
+border-radius:12px;
 
-    width:
-        100%;
+padding:12px;
 
-    max-height:
-        87%;
+margin-bottom:11px;
 
-    border-radius:
-        24px
-        24px
-        0
-        0;
+font-size:11.5px;
 
-    padding:
-        20px;
-
-    overflow-y:
-        auto;
-
+line-height:2;
 }
 
+.etiquette{
+background:#f0fdf4;
 
-.modal-header {
+border-right:
+4px solid var(--green2);
 
-    display:
-        flex;
+border-radius:10px;
 
-    justify-content:
-        space-between;
+padding:11px;
 
-    align-items:
-        center;
+margin-bottom:10px;
 
-    border-bottom:
-        1px solid
-        #e2e8f0;
+font-size:11.5px;
 
-    padding-bottom:
-        10px;
-
-    margin-bottom:
-        15px;
-
-    color:
-        var(--primary-emerald);
-
-    font-weight:
-        bold;
-
+line-height:2.1;
 }
 
+@media(min-width:500px){
 
-.modal-close {
-
-    width:
-        38px;
-
-    height:
-        38px;
-
-    border:
-        1px solid
-        #e2e8f0;
-
-    background:
-        #f8fafc;
-
-    border-radius:
-        11px;
-
-    cursor:
-        pointer;
-
+body{
+padding:10px;
 }
 
-
-/* ==============================
-   SETTINGS
-============================== */
-
-.settings-input {
-
-    width:
-        100%;
-
-    padding:
-        11px;
-
-    border:
-        1.5px solid
-        #cbd5e1;
-
-    border-radius:
-        10px;
-
-    font-family:
-        'Noto Sans Arabic',
-        sans-serif;
-
-    font-size:
-        12px;
-
-    margin:
-        8px 0;
-
-    direction:
-        ltr;
-
+.app{
+height:calc(100dvh - 20px);
+max-height:940px;
+border-radius:28px;
 }
-
-
-.settings-help {
-
-    font-size:
-        10.5px;
-
-    color:
-        #64748b;
-
-    line-height:
-        1.8;
-
-    margin-bottom:
-        14px;
-
-}
-
-
-.settings-save {
-
-    width:
-        100%;
-
-    padding:
-        11px;
-
-    background:
-        var(--primary-emerald);
-
-    color:
-        white;
-
-    border:
-        none;
-
-    border-radius:
-        11px;
-
-    font-weight:
-        bold;
-
-    cursor:
-        pointer;
-
-}
-
-
-.settings-delete {
-
-    width:
-        100%;
-
-    margin-top:
-        8px;
-
-    padding:
-        10px;
-
-    background:
-        #ffffff;
-
-    color:
-        #dc2626;
-
-    border:
-        1px solid
-        #fecaca;
-
-    border-radius:
-        11px;
-
-    cursor:
-        pointer;
-
-}
-
-
-/* ==============================
-   HISTORY
-============================== */
-
-.history-item {
-
-    background:
-        #f8fafc;
-
-    border:
-        1px solid
-        #e2e8f0;
-
-    border-radius:
-        12px;
-
-    padding:
-        12px;
-
-    margin-bottom:
-        12px;
-
-    font-size:
-        11.5px;
-
-    line-height:
-        2.1;
-
-}
-
-
-/* ==============================
-   ETIQUETTES
-============================== */
-
-.etiquette-item {
-
-    background:
-        #f0fdf4;
-
-    border-right:
-        4px solid
-        var(--primary-green);
-
-    padding:
-        11px
-        12px;
-
-    border-radius:
-        10px;
-
-    margin-bottom:
-        10px;
-
-    font-size:
-        11.5px;
-
-    line-height:
-        2.1;
-
-}
-
-
-/* ==============================
-   MOBILE
-============================== */
-
-@media(max-width:500px) {
-
-    body {
-
-        padding:
-            0;
-
-    }
-
-
-    .app-frame {
-
-        max-width:
-            none;
-
-        height:
-            100vh;
-
-        height:
-            100dvh;
-
-        max-height:
-            none;
-
-        border-radius:
-            0;
-
-        border:
-            none;
-
-    }
 
 }
 
@@ -1590,66 +693,41 @@ textarea:focus {
 
 </head>
 
-
 <body>
 
+<div class="app">
 
-<div class="app-frame">
+<header class="header">
 
-
-<!-- HEADER -->
-
-<header class="app-header">
-
-
-<div class="header-top-bar">
-
+<div class="header-row">
 
 <div class="header-actions">
 
-
 <button
-    class="icon-btn"
-    onclick="openHistoryModal()"
+class="icon-btn"
+onclick="openHistory()"
+title="محفوظ تعبیرات"
 >
-
 <i class="fas fa-history"></i>
-
 </button>
-
-
-<button
-    class="icon-btn"
-    onclick="openSettingsModal()"
->
-
-<i class="fas fa-cog"></i>
-
-</button>
-
 
 </div>
-
 
 <h1>
 تعبیر الرؤیا
 </h1>
 
-
 <button
-    class="icon-btn"
-    onclick="openEtiquettesModal()"
+class="icon-btn"
+onclick="openEtiquettes()"
+title="شرعی آداب"
 >
-
 <i class="fas fa-book-quran"></i>
-
 </button>
-
 
 </div>
 
-
-<div class="developer-tag">
+<div class="tag">
 
 <i class="fas fa-feather-alt"></i>
 
@@ -1657,50 +735,43 @@ textarea:focus {
 
 </div>
 
-
 </header>
 
-
-
-<!-- MAIN -->
-
 <main
-    class="main-scroll"
-    id="mainScroll"
+class="main"
+id="mainScroll"
 >
 
-
-<!-- WELCOME -->
-
-<section class="welcome-card">
-
+<section class="welcome">
 
 <h2>
 
-<i class="fas fa-moon"></i>
+<i
+class="fas fa-moon"
+style="color:#d97706"
+></i>
 
 السلام علیکم ورحمۃ اللہ!
 
 </h2>
 
-
 <p>
 
-نیک خواب کے بارے میں صحیح احادیث میں
-نبوت کے اجزاء میں سے ایک جزء ہونے کا ذکر ملتا ہے۔
+اپنا خواب جیسا دیکھا ہے
+ویسا ہی مکمل بیان کریں۔
 
 ہر خواب لازماً قابلِ تعبیر نہیں ہوتا۔
-
 بعض نیک رؤیا،
 بعض پریشان کن خواب
-اور بعض حدیثُ النفس ہو سکتے ہیں۔
+اور بعض حدیثُ النفس
+بھی ہو سکتے ہیں۔
 
 </p>
 
+<div class="note">
 
-<div class="important-note">
-
-خواب کی اصل حقیقت اور درست ترین تعبیر
+خواب کی اصل حقیقت
+اور درست ترین تعبیر
 اللہ تعالیٰ ہی بہتر جانتا ہے۔
 
 یہاں پیش کی جانے والی تعبیر
@@ -1709,299 +780,234 @@ textarea:focus {
 
 </div>
 
-
 </section>
-
-
-
-<!-- POLLS -->
 
 <section class="poll-card">
 
-
 <div class="poll-group">
-
 
 <div class="poll-label">
 
 <i class="fas fa-cloud-sun-rain"></i>
 
-موسم:
+موسم
 
 </div>
 
-
 <div
-    class="poll-options"
-    id="seasonPoll"
+class="poll-options"
+id="seasonPoll"
 >
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('seasonPoll',this,'سردی')"
+class="poll-btn"
+onclick="selectPoll('seasonPoll',this,'سردی')"
 >
 سردی
 </button>
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('seasonPoll',this,'گرمی')"
+class="poll-btn"
+onclick="selectPoll('seasonPoll',this,'گرمی')"
 >
 گرمی
 </button>
 
-
 <button
-    class="poll-btn selected"
-    onclick="selectPoll('seasonPoll',this,'معلوم نہیں')"
+class="poll-btn selected"
+onclick="selectPoll('seasonPoll',this,'معلوم نہیں')"
 >
 معلوم نہیں
 </button>
 
-
 </div>
 
-
 </div>
-
-
 
 <div class="poll-group">
-
 
 <div class="poll-label">
 
 <i class="fas fa-location-dot"></i>
 
-مقام:
+مقام
 
 </div>
 
-
 <div
-    class="poll-options"
-    id="locationPoll"
+class="poll-options"
+id="locationPoll"
 >
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('locationPoll',this,'اپنا گھر')"
+class="poll-btn"
+onclick="selectPoll('locationPoll',this,'اپنا گھر')"
 >
 گھر
 </button>
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('locationPoll',this,'باہر یا راستہ')"
+class="poll-btn"
+onclick="selectPoll('locationPoll',this,'باہر یا راستہ')"
 >
 باہر / راستہ
 </button>
 
-
 <button
-    class="poll-btn selected"
-    onclick="selectPoll('locationPoll',this,'معلوم نہیں یا دیگر مقام')"
+class="poll-btn selected"
+onclick="selectPoll('locationPoll',this,'دیگر یا معلوم نہیں')"
 >
 دیگر
 </button>
 
-
 </div>
 
-
 </div>
-
-
 
 <div class="poll-group">
-
 
 <div class="poll-label">
 
 <i class="fas fa-clock"></i>
 
-وقت:
+خواب دیکھنے کا وقت
 
 </div>
 
-
 <div
-    class="poll-options"
-    id="timePoll"
+class="poll-options"
+id="timePoll"
 >
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('timePoll',this,'رات کا آخری حصہ')"
+class="poll-btn"
+onclick="selectPoll('timePoll',this,'رات کا آخری حصہ')"
 >
 آخری پہر
 </button>
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('timePoll',this,'دن کے وقت')"
+class="poll-btn"
+onclick="selectPoll('timePoll',this,'دن کے وقت')"
 >
 دن
 </button>
 
-
 <button
-    class="poll-btn selected"
-    onclick="selectPoll('timePoll',this,'یاد نہیں')"
+class="poll-btn selected"
+onclick="selectPoll('timePoll',this,'یاد نہیں')"
 >
 یاد نہیں
 </button>
 
-
 </div>
 
-
 </div>
-
-
 
 <button
-    class="more-details-toggle"
-    onclick="toggleAdvancedDetails()"
+class="more-btn"
+onclick="toggleAdvanced()"
 >
-
 
 <i class="fas fa-sliders"></i>
 
-
 مزید تفصیلات شامل کریں
-
-
-<i
-    id="toggleIcon"
-    class="fas fa-chevron-down"
-></i>
-
 
 </button>
 
-
-
 <div
-    id="advancedContent"
-    class="collapsible-content"
+class="advanced"
+id="advanced"
 >
 
-
-<div class="poll-group">
-
+<div
+class="poll-group"
+style="margin-top:14px"
+>
 
 <div class="poll-label">
 
 <i class="fas fa-user"></i>
 
-خواب دیکھنے والے کی حالت:
+خواب دیکھنے والے کی حالت
 
 </div>
 
-
 <div
-    class="poll-options"
-    id="statusPoll"
+class="poll-options"
+id="statusPoll"
 >
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('statusPoll',this,'غیر شادی شدہ')"
+class="poll-btn"
+onclick="selectPoll('statusPoll',this,'غیر شادی شدہ')"
 >
 غیر شادی شدہ
 </button>
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('statusPoll',this,'شادی شدہ')"
+class="poll-btn"
+onclick="selectPoll('statusPoll',this,'شادی شدہ')"
 >
 شادی شدہ
 </button>
 
-
 <button
-    class="poll-btn selected"
-    onclick="selectPoll('statusPoll',this,'معلوم نہیں یا دیگر')"
+class="poll-btn selected"
+onclick="selectPoll('statusPoll',this,'دیگر یا معلوم نہیں')"
 >
 دیگر
 </button>
 
-
 </div>
 
-
 </div>
-
-
 
 <div class="poll-group">
-
 
 <div class="poll-label">
 
 <i class="fas fa-heart"></i>
 
-بیدار ہونے کے بعد کیفیت:
+جاگنے کے بعد کیفیت
 
 </div>
 
-
 <div
-    class="poll-options"
-    id="emotionPoll"
+class="poll-options"
+id="emotionPoll"
 >
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('emotionPoll',this,'اطمینان یا خوشی')"
+class="poll-btn"
+onclick="selectPoll('emotionPoll',this,'اطمینان یا خوشی')"
 >
 اطمینان
 </button>
 
-
 <button
-    class="poll-btn"
-    onclick="selectPoll('emotionPoll',this,'خوف یا پریشانی')"
+class="poll-btn"
+onclick="selectPoll('emotionPoll',this,'خوف یا پریشانی')"
 >
 خوف
 </button>
 
-
 <button
-    class="poll-btn selected"
-    onclick="selectPoll('emotionPoll',this,'واضح نہیں')"
+class="poll-btn selected"
+onclick="selectPoll('emotionPoll',this,'واضح نہیں')"
 >
 واضح نہیں
 </button>
 
+</div>
 
 </div>
 
-
 </div>
-
-
-</div>
-
 
 </section>
 
-
-
-<!-- INPUT -->
-
 <section class="input-card">
-
 
 <label for="dreamInput">
 
@@ -2011,43 +1017,31 @@ textarea:focus {
 
 </label>
 
-
 <textarea
-    id="dreamInput"
-    placeholder="خواب جیسا دیکھا ہے ویسا ہی مکمل لکھیں..."
+id="dreamInput"
+placeholder="خواب جیسا دیکھا ہے ویسا ہی لکھیں۔ اشخاص، جگہ، گفتگو، احساسات اور اہم واقعات بھی بیان کر سکتے ہیں..."
 ></textarea>
 
-
 <button
-    id="submitBtn"
-    class="submit-btn"
-    onclick="fetchInterpretation()"
+class="submit"
+id="submitBtn"
+onclick="fetchInterpretation()"
 >
-
 
 <i class="fas fa-search"></i>
 
-
 تعبیر معلوم کریں
-
 
 </button>
 
-
 </section>
 
-
-
-<!-- LOADER -->
-
 <section
-    class="loader-box"
-    id="loader"
+class="loader-card"
+id="loader"
 >
 
-
 <div class="spinner"></div>
-
 
 <div class="loader-text">
 
@@ -2057,32 +1051,24 @@ textarea:focus {
 
 </div>
 
+<div class="loader-sub">
 
-<div
-    id="modelProgress"
-    class="model-progress"
-></div>
+3.1 Flash-Lite سے براہِ راست جواب لیا جا رہا ہے
 
+</div>
 
 </section>
 
-
-
-<!-- RESULT -->
-
 <section
-    class="result-card"
-    id="resultCard"
+class="result-card"
+id="resultCard"
 >
 
-
-<div class="result-header">
-
+<div class="result-head">
 
 <span>
 الجواب وبالله التوفيق
 </span>
-
 
 <span class="result-status">
 
@@ -2092,22 +1078,18 @@ textarea:focus {
 
 </span>
 
-
 </div>
 
-
 <div
-    class="result-body"
-    id="resultText"
+class="result-text"
+id="resultText"
 ></div>
 
-
-<div class="action-bar">
-
+<div class="actions">
 
 <button
-    class="action-btn"
-    onclick="copyResult()"
+class="action-btn"
+onclick="copyResult()"
 >
 
 <i class="fas fa-copy"></i>
@@ -2116,10 +1098,9 @@ textarea:focus {
 
 </button>
 
-
 <button
-    class="action-btn whatsapp"
-    onclick="shareWhatsApp()"
+class="action-btn whatsapp"
+onclick="shareWhatsApp()"
 >
 
 <i class="fab fa-whatsapp"></i>
@@ -2128,55 +1109,44 @@ textarea:focus {
 
 </button>
 
-
 </div>
 
-
-
-<div class="advice-box">
-
+<div class="advice">
 
 <strong>
 
 <i class="fas fa-hand-holding-heart"></i>
 
-مسنون رہنمائی
+مسنون رہنمائی:
 
 </strong>
 
+<br>
 
-اگر خواب اچھا ہو
-تو اللہ تعالیٰ کا شکر ادا کریں۔
-
+اگر خواب اچھا ہو تو
+اللہ تعالیٰ کا شکر ادا کریں۔
 
 <br><br>
 
-
-اگر خواب پریشان کن ہو
-تو بائیں جانب ہلکا سا تین مرتبہ تھتکاریں،
-اللہ تعالیٰ سے اس کے شر
+اگر خواب پریشان کن ہو تو
+بائیں جانب ہلکا سا تین مرتبہ تھتکاریں،
+اللہ تعالیٰ سے خواب کے شر
 اور شیطان سے پناہ مانگیں،
 کروٹ بدلیں
 اور اسے لوگوں سے بیان نہ کریں۔
 
-
 <br><br>
-
 
 صدقہ کرنا نیکی ہے،
 لیکن اسے ہر خواب کا
-لازمی یا یقینی علاج نہ سمجھا جائے۔
-
+لازمی یا یقینی علاج
+نہ سمجھا جائے۔
 
 </div>
 
-
 </section>
 
-
-
-<section class="daily-tip">
-
+<section class="tip-card">
 
 <h3>
 
@@ -2186,7 +1156,6 @@ textarea:focus {
 
 </h3>
 
-
 <p>
 
 ایک ہی علامت ہر شخص کے لیے
@@ -2194,128 +1163,24 @@ textarea:focus {
 
 خواب کا پورا سیاق،
 خواب دیکھنے والے کے حالات،
-اس کے احساسات
+احساسات
 اور دوسری علامات
 ممکنہ تعبیر پر اثرانداز ہو سکتی ہیں۔
 
 </p>
 
-
 </section>
-
 
 </main>
 
-
-
-<!-- SETTINGS -->
-
 <div
-    class="modal-overlay"
-    id="settingsModal"
+class="modal"
+id="historyModal"
 >
 
+<div class="modal-box">
 
-<div class="modal-body">
-
-
-<div class="modal-header">
-
-
-<span>
-
-<i class="fas fa-cog"></i>
-
-سسٹم سیٹنگز
-
-</span>
-
-
-<button
-    class="modal-close"
-    onclick="closeSettingsModal()"
->
-
-✕
-
-</button>
-
-
-</div>
-
-
-<p
-    style="
-        font-size:12px;
-        color:#475569;
-        line-height:2;
-    "
->
-
-اپنی Gemini API Key درج کریں۔
-
-</p>
-
-
-<input
-    type="password"
-    id="userApiKeyInput"
-    class="settings-input"
-    placeholder="Gemini API Key"
->
-
-
-<div class="settings-help">
-
-یہ ذاتی testing کے لیے ہے۔
-
-اگر بعد میں یہ website یا app
-عام لوگوں کو دینی ہو
-تو API Key کو backend پر رکھنا بہتر ہوگا۔
-
-</div>
-
-
-<button
-    class="settings-save"
-    onclick="saveApiKey()"
->
-
-محفوظ کریں
-
-</button>
-
-
-<button
-    class="settings-delete"
-    onclick="deleteApiKey()"
->
-
-API Key حذف کریں
-
-</button>
-
-
-</div>
-
-
-</div>
-
-
-
-<!-- HISTORY -->
-
-<div
-    class="modal-overlay"
-    id="historyModal"
->
-
-
-<div class="modal-body">
-
-
-<div class="modal-header">
-
+<div class="modal-head">
 
 <span>
 
@@ -2325,61 +1190,46 @@ API Key حذف کریں
 
 </span>
 
-
 <button
-    class="modal-close"
-    onclick="closeHistoryModal()"
+class="close"
+onclick="closeHistory()"
 >
-
 ✕
-
 </button>
-
 
 </div>
 
-
 <div id="historyList"></div>
 
-
 <button
-    onclick="clearHistory()"
-    style="
-        width:100%;
-        padding:10px;
-        border:1px solid #ef4444;
-        color:#ef4444;
-        background:#fef2f2;
-        border-radius:10px;
-        cursor:pointer;
-    "
+style="
+width:100%;
+padding:10px;
+border:1px solid #ef4444;
+background:#fef2f2;
+color:#ef4444;
+border-radius:10px;
+cursor:pointer;
+"
+onclick="clearHistory()"
 >
 
 تمام ہسٹری صاف کریں
 
 </button>
 
-
 </div>
 
-
 </div>
-
-
-
-<!-- ETIQUETTES -->
 
 <div
-    class="modal-overlay"
-    id="etiquettesModal"
+class="modal"
+id="etiquettesModal"
 >
 
+<div class="modal-box">
 
-<div class="modal-body">
-
-
-<div class="modal-header">
-
+<div class="modal-head">
 
 <span>
 
@@ -2389,22 +1239,16 @@ API Key حذف کریں
 
 </span>
 
-
 <button
-    class="modal-close"
-    onclick="closeEtiquettesModal()"
+class="close"
+onclick="closeEtiquettes()"
 >
-
 ✕
-
 </button>
-
 
 </div>
 
-
-
-<div class="etiquette-item">
+<div class="etiquette">
 
 <strong>
 اچھا خواب:
@@ -2416,9 +1260,7 @@ API Key حذف کریں
 
 </div>
 
-
-
-<div class="etiquette-item">
+<div class="etiquette">
 
 <strong>
 پریشان کن خواب:
@@ -2426,16 +1268,14 @@ API Key حذف کریں
 
 بائیں جانب ہلکا سا
 تین مرتبہ تھتکاریں،
-اللہ سے اس خواب کے شر
+اللہ تعالیٰ سے اس کے شر
 اور شیطان سے پناہ مانگیں،
 کروٹ بدلیں
-اور اسے لوگوں سے بیان نہ کریں۔
+اور اسے بیان نہ کریں۔
 
 </div>
 
-
-
-<div class="etiquette-item">
+<div class="etiquette">
 
 <strong>
 ہر خواب قابلِ تعبیر نہیں:
@@ -2444,1420 +1284,528 @@ API Key حذف کریں
 روزمرہ خیالات،
 ذہنی دباؤ،
 بیماری
-اور مصروفیات
-بھی خواب کو متاثر کر سکتی ہیں۔
+اور دوسری مصروفیات
+خواب پر اثرانداز ہو سکتی ہیں۔
 
 </div>
 
+</div>
 
 </div>
 
-
 </div>
-
-
-</div>
-
-
 
 <script>
 
+/*
+=========================================================
+FRONTEND
+=========================================================
 
-/* ==========================================================
-   CURRENT GEMINI FALLBACK MODELS
-========================================================== */
+یہ HTML API key نہیں مانگتا۔
 
+یہ backend endpoint استعمال کرتا ہے:
 
-const MODEL_LIST = [
+/api/dream
 
-    "gemini-3.8-flash",
+Backend میں model ترتیب یہ رکھیں:
 
-    "gemini-3.7-flash",
+1. gemini-3.1-flash-lite
+2. gemini-3.5-flash-lite
+3. gemini-3.6-flash
 
-    "gemini-3.6-flash",
+Automatic Google Search بند رکھیں۔
 
-    "gemini-3.5-flash-lite"
+=========================================================
+*/
 
-];
-
-
-const API_BASE =
-    "https://generativelanguage.googleapis.com/v1beta/models";
-
+const API_URL = "/api/dream";
 
 
 let selectedSeason =
-    "معلوم نہیں";
+"معلوم نہیں";
 
 let selectedLocation =
-    "معلوم نہیں یا دیگر مقام";
+"دیگر یا معلوم نہیں";
 
 let selectedTime =
-    "یاد نہیں";
+"یاد نہیں";
 
 let selectedStatus =
-    "معلوم نہیں یا دیگر";
+"دیگر یا معلوم نہیں";
 
 let selectedEmotion =
-    "واضح نہیں";
+"واضح نہیں";
 
 let isWorking =
-    false;
-
-
-
-/* ==========================================================
-   POLLS
-========================================================== */
+false;
 
 
 function selectPoll(
-    pollId,
-    element,
-    value
-) {
+pollId,
+element,
+value
+){
+
+document
+.querySelectorAll(
+"#" + pollId + " .poll-btn"
+)
+.forEach(
+btn => {
+
+btn.classList.remove(
+"selected"
+);
+
+}
+);
+
+element
+.classList
+.add(
+"selected"
+);
 
 
-    document
-        .querySelectorAll(
-            "#" +
-            pollId +
-            " .poll-btn"
-        )
-        .forEach(
-            button => {
+if(
+pollId === "seasonPoll"
+){
+selectedSeason = value;
+}
 
-                button
-                    .classList
-                    .remove(
-                        "selected"
-                    );
+if(
+pollId === "locationPoll"
+){
+selectedLocation = value;
+}
 
-            }
-        );
+if(
+pollId === "timePoll"
+){
+selectedTime = value;
+}
 
+if(
+pollId === "statusPoll"
+){
+selectedStatus = value;
+}
 
-    element
-        .classList
-        .add(
-            "selected"
-        );
-
-
-    if (
-        pollId ===
-        "seasonPoll"
-    ) {
-
-        selectedSeason =
-            value;
-
-    }
-
-
-    if (
-        pollId ===
-        "locationPoll"
-    ) {
-
-        selectedLocation =
-            value;
-
-    }
-
-
-    if (
-        pollId ===
-        "timePoll"
-    ) {
-
-        selectedTime =
-            value;
-
-    }
-
-
-    if (
-        pollId ===
-        "statusPoll"
-    ) {
-
-        selectedStatus =
-            value;
-
-    }
-
-
-    if (
-        pollId ===
-        "emotionPoll"
-    ) {
-
-        selectedEmotion =
-            value;
-
-    }
+if(
+pollId === "emotionPoll"
+){
+selectedEmotion = value;
+}
 
 }
 
 
+function toggleAdvanced(){
 
-/* ==========================================================
-   ADVANCED
-========================================================== */
-
-
-function toggleAdvancedDetails() {
-
-
-    const content =
-        document.getElementById(
-            "advancedContent"
-        );
-
-
-    const icon =
-        document.getElementById(
-            "toggleIcon"
-        );
-
-
-    const open =
-        content
-            .classList
-            .toggle(
-                "open"
-            );
-
-
-    icon.className =
-        open
-
-        ? "fas fa-chevron-up"
-
-        : "fas fa-chevron-down";
+document
+.getElementById(
+"advanced"
+)
+.classList
+.toggle(
+"open"
+);
 
 }
 
 
+async function fetchInterpretation(){
 
-/* ==========================================================
-   PROMPT
-========================================================== */
-
-
-function buildSystemPrompt() {
+if(isWorking){
+return;
+}
 
 
-return `
+const dream =
+document
+.getElementById(
+"dreamInput"
+)
+.value
+.trim();
 
-تم "تعبیرُ الرؤیا — حذیفہ سعید"
-کے نام سے ترتیب دیا گیا
-ایک اسلامی تحقیقی معاون ہو۔
 
-صارف کے پورے خواب کو
-ایک مکمل واقعہ سمجھو۔
+if(!dream){
 
-صرف ایک لفظ
-یا ایک علامت دیکھ کر
-فوری قطعی نتیجہ نہ نکالو۔
+alert(
+"براہِ کرم پہلے اپنا خواب لکھیں۔"
+);
 
-خواب میں موجود
-اشخاص،
-رشتے،
-گفتگو،
-جگہ،
-وقت،
-احساسات،
-اعمال
-اور اہم علامات
-کو باہم ملا کر
-مجموعی ممکنہ تعبیر پیش کرو۔
-
-مصادر میں ترجیح:
-
-قرآن مجید،
-
-صحیح احادیثِ رؤیا،
-
-صحابہ و تابعین سے
-معتبر منقولات،
-
-امام محمد بن سیرین رحمہ اللہ
-سے معتبر منقول تعبیرات،
-
-امام عبدالغنی نابلسی رحمہ اللہ
-کی
-تعطير الأنام في تعبير المنام،
-
-ابن شاہین رحمہ اللہ کی
-الإشارات في علم العبارات،
-
-اور معتبر اہلِ سنت
-دارالافتاء کے
-شائع شدہ جوابات۔
-
-خصوصاً:
-
-دارالافتاء دارالعلوم دیوبند،
-
-جامعہ علوم اسلامیہ
-بنوری ٹاؤن،
-
-جامعہ فاروقیہ کراچی۔
-
-اگر ویب سرچ دستیاب ہو
-تو قریب ترین معتبر
-شائع شدہ جواب تلاش کر سکتے ہو۔
-
-کبھی جعلی
-حدیث،
-فتویٰ،
-کتاب،
-صفحہ نمبر،
-حوالہ
-یا URL
-مت بناؤ۔
-
-اگر ابن سیرین رحمہ اللہ
-کی طرف نسبت ثابت نہ ہو
-تو کہو:
-
-"ابن سیرینؒ سے منسوب کتبِ تعبیر میں..."
-
-ہر خواب لازماً
-قابلِ تعبیر نہیں۔
-
-حدیث النفس
-اور پریشان کن خواب
-کے امکان کو بھی
-ملحوظ رکھو۔
-
-صرف خواب کی بنیاد پر:
-
-کسی شخص کی موت،
-
-عضو کٹنے،
-
-طلاق،
-
-شادی،
-
-حمل،
-
-جادو،
-
-جن،
-
-دشمنی،
-
-مالی نقصان
-
-یا کسی دوسرے
-مستقبل کے واقعے کو
-یقینی قرار نہ دو۔
-
-ممکنہ انداز اختیار کرو۔
-
-مثلاً:
-
-"اس خواب کی ممکنہ تعبیر..."
-
-"بظاہر یہ علامت..."
-
-"یہ کیفیت ... کی طرف اشارہ کر سکتی ہے..."
-
-صارف کی اضافی معلومات:
-
-موسم:
-${selectedSeason}
-
-مقام:
-${selectedLocation}
-
-وقت:
-${selectedTime}
-
-حالت:
-${selectedStatus}
-
-بیدار ہونے پر کیفیت:
-${selectedEmotion}
-
-ان معلومات کو
-صرف اسی حد تک استعمال کرو
-جہاں واقعی مفید ہوں۔
-
-جواب کے آغاز میں لکھو:
-
-تعبیرُ الرؤیا — حذیفہ سعید
-
-پھر سادہ،
-باوقار،
-مربوط
-اور عام فہم اردو میں
-ممکنہ تعبیر دو۔
-
-بلا ضرورت
-Step 1،
-Step 2
-وغیرہ استعمال نہ کرو۔
-
-اگر معتبر بنیاد نہ ملے
-تو صاف کہو:
-
-"اس خواب کی واضح اور قطعی تعبیر
-معتبر مصادر سے متعین نہیں ہوتی،
-اس لیے یقینی بات کہنا مناسب نہیں۔"
-
-جواب کے آخر میں
-لازماً الگ سطر میں لکھو:
-
-والله أعلم
-
-`;
+return;
 
 }
 
 
-
-/* ==========================================================
-   WAIT
-========================================================== */
-
-
-function wait(
-    milliseconds
-) {
+const loader =
+document.getElementById(
+"loader"
+);
 
 
-    return new Promise(
-        resolve => {
+const resultCard =
+document.getElementById(
+"resultCard"
+);
 
-            setTimeout(
-                resolve,
-                milliseconds
-            );
 
-        }
-    );
+const resultText =
+document.getElementById(
+"resultText"
+);
+
+
+const submitBtn =
+document.getElementById(
+"submitBtn"
+);
+
+
+isWorking =
+true;
+
+
+submitBtn.disabled =
+true;
+
+
+loader.style.display =
+"block";
+
+
+resultCard.style.display =
+"none";
+
+
+loader.scrollIntoView({
+
+behavior:
+"smooth",
+
+block:
+"center"
+
+});
+
+
+try{
+
+
+const response =
+await fetch(
+API_URL,
+{
+
+method:
+"POST",
+
+headers:{
+
+"Content-Type":
+"application/json"
+
+},
+
+body:
+JSON.stringify({
+
+dream:
+dream,
+
+season:
+selectedSeason,
+
+location:
+selectedLocation,
+
+time:
+selectedTime,
+
+status:
+selectedStatus,
+
+emotion:
+selectedEmotion
+
+})
+
+}
+);
+
+
+let data = {};
+
+
+try{
+
+data =
+await response.json();
+
+}
+catch{
+
+throw new Error(
+"Server نے درست جواب نہیں دیا۔"
+);
 
 }
 
 
+if(!response.ok){
 
-/* ==========================================================
-   FETCH WITH TIMEOUT
-========================================================== */
+throw new Error(
 
+data.error
+||
+data.message
+||
+"Server سے جواب حاصل نہیں ہوا۔"
 
-async function fetchWithTimeout(
-    url,
-    options,
-    timeoutMs = 45000
-) {
-
-
-    const controller =
-        new AbortController();
-
-
-    const timeout =
-        setTimeout(
-            () => {
-
-                controller.abort();
-
-            },
-            timeoutMs
-        );
-
-
-    try {
-
-
-        return await fetch(
-            url,
-            {
-                ...options,
-
-                signal:
-                    controller.signal
-            }
-        );
-
-
-    }
-
-    finally {
-
-
-        clearTimeout(
-            timeout
-        );
-
-    }
+);
 
 }
 
 
+const answer =
+data.answer
+||
+data.text;
 
-/* ==========================================================
-   MULTI MODEL FALLBACK
-========================================================== */
 
+if(!answer){
 
-async function makeGeminiRequest(
-    apiKey,
-    payload
-) {
-
-
-    let lastError =
-        "کوئی جواب دستیاب نہیں ہوا۔";
-
-
-    const progress =
-        document.getElementById(
-            "modelProgress"
-        );
-
-
-    /*
-      ہر model کو باری باری آزمایا جائے گا۔
-    */
-
-
-    for (
-        let modelIndex = 0;
-        modelIndex < MODEL_LIST.length;
-        modelIndex++
-    ) {
-
-
-        const modelName =
-            MODEL_LIST[
-                modelIndex
-            ];
-
-
-        progress.textContent =
-            `ماڈل ${modelIndex + 1}/${MODEL_LIST.length} سے رابطہ کیا جا رہا ہے...`;
-
-
-        /*
-          پہلے Search Grounding کے ساتھ،
-          پھر ضرورت پڑنے پر بغیر Search کے۔
-        */
-
-
-        const searchModes = [
-
-            true,
-
-            false
-
-        ];
-
-
-        for (
-            const useSearch
-            of searchModes
-        ) {
-
-
-            /*
-              Temporary load ہونے پر
-              اسی model کو دو مرتبہ try کریں۔
-            */
-
-
-            for (
-                let attempt = 1;
-                attempt <= 2;
-                attempt++
-            ) {
-
-
-                const apiUrl =
-                    `${API_BASE}/${encodeURIComponent(modelName)}:generateContent`;
-
-
-                const body =
-                    JSON.parse(
-                        JSON.stringify(
-                            payload
-                        )
-                    );
-
-
-                if (
-                    useSearch
-                ) {
-
-
-                    body.tools = [
-
-                        {
-
-                            google_search: {}
-
-                        }
-
-                    ];
-
-                }
-
-
-                try {
-
-
-                    const response =
-                        await fetchWithTimeout(
-                            apiUrl,
-                            {
-
-                                method:
-                                    "POST",
-
-                                headers: {
-
-                                    "Content-Type":
-                                        "application/json",
-
-                                    "x-goog-api-key":
-                                        apiKey
-
-                                },
-
-                                body:
-                                    JSON.stringify(
-                                        body
-                                    )
-
-                            }
-                        );
-
-
-                    let data = {};
-
-
-                    try {
-
-
-                        data =
-                            await response
-                                .json();
-
-
-                    }
-
-                    catch {
-
-
-                        data = {};
-
-                    }
-
-
-                    /*
-                      SUCCESS
-                    */
-
-
-                    if (
-                        response.ok
-                    ) {
-
-
-                        console.log(
-                            "Gemini model used:",
-                            modelName,
-                            "Search:",
-                            useSearch
-                        );
-
-
-                        progress.textContent =
-                            "جواب موصول ہو گیا۔";
-
-
-                        return {
-
-                            ok:
-                                true,
-
-                            data:
-                                data,
-
-                            model:
-                                modelName
-
-                        };
-
-                    }
-
-
-                    const message =
-                        data
-                            ?.error
-                            ?.message
-
-                        ||
-
-                        `HTTP ${response.status}`;
-
-
-                    lastError =
-                        message;
-
-
-                    const lower =
-                        message
-                            .toLowerCase();
-
-
-                    /*
-                      API KEY / PERMISSION ERROR
-
-                      Model بدلنے کا فائدہ نہیں۔
-                    */
-
-
-                    if (
-
-                        response.status === 401
-
-                        ||
-
-                        response.status === 403
-
-                    ) {
-
-
-                        return {
-
-                            ok:
-                                false,
-
-                            data: {
-
-                                error: {
-
-                                    message:
-                                        message
-
-                                }
-
-                            }
-
-                        };
-
-                    }
-
-
-                    /*
-                      Search grounding unsupported ہو
-                      تو بغیر Search کے
-                      اسی model کو try کریں۔
-                    */
-
-
-                    if (
-
-                        useSearch
-
-                        &&
-
-                        (
-
-                            response.status === 400
-
-                            ||
-
-                            lower.includes(
-                                "tool"
-                            )
-
-                            ||
-
-                            lower.includes(
-                                "google_search"
-                            )
-
-                        )
-
-                    ) {
-
-
-                        break;
-
-                    }
-
-
-                    /*
-                      High Demand / Rate Limit / Server Busy
-                    */
-
-
-                    const temporaryError =
-
-                        response.status === 429
-
-                        ||
-
-                        response.status === 500
-
-                        ||
-
-                        response.status === 502
-
-                        ||
-
-                        response.status === 503
-
-                        ||
-
-                        response.status === 504
-
-                        ||
-
-                        lower.includes(
-                            "high demand"
-                        )
-
-                        ||
-
-                        lower.includes(
-                            "overloaded"
-                        )
-
-                        ||
-
-                        lower.includes(
-                            "temporarily unavailable"
-                        );
-
-
-                    if (
-                        temporaryError
-                    ) {
-
-
-                        progress.textContent =
-                            `${modelName} مصروف ہے، دوبارہ کوشش کی جا رہی ہے...`;
-
-
-                        await wait(
-                            attempt * 1800
-                        );
-
-
-                        continue;
-
-                    }
-
-
-                    /*
-                      Model unavailable/not found:
-                      اگلے model پر جائیں۔
-                    */
-
-
-                    if (
-
-                        response.status === 404
-
-                        ||
-
-                        lower.includes(
-                            "not found"
-                        )
-
-                    ) {
-
-
-                        break;
-
-                    }
-
-
-                    /*
-                      دوسری مستقل error
-                    */
-
-
-                    break;
-
-
-                }
-
-                catch (
-                    error
-                ) {
-
-
-                    lastError =
-                        error.name ===
-                        "AbortError"
-
-                        ? "API request timeout"
-
-                        : error.message;
-
-
-                    console.warn(
-                        modelName,
-                        lastError
-                    );
-
-
-                    await wait(
-                        attempt * 1500
-                    );
-
-                }
-
-            }
-
-        }
-
-    }
-
-
-    /*
-      سب models ناکام
-    */
-
-
-    return {
-
-        ok:
-            false,
-
-        data: {
-
-            error: {
-
-                message:
-                    lastError
-
-            }
-
-        }
-
-    };
+throw new Error(
+"تعبیر کا جواب خالی ہے۔"
+);
 
 }
 
 
-
-/* ==========================================================
-   EXTRACT RESPONSE TEXT
-========================================================== */
+resultText.textContent =
+answer;
 
 
-function getResponseText(
-    data
-) {
+resultCard.style.display =
+"block";
 
 
-    const parts =
-        data
-            ?.candidates
-            ?.[0]
-            ?.content
-            ?.parts;
+saveToHistory(
+dream,
+answer
+);
 
 
-    if (
-        !Array.isArray(
-            parts
-        )
-    ) {
+resultCard.scrollIntoView({
 
+behavior:
+"smooth",
 
-        return "";
+block:
+"start"
 
-    }
+});
 
-
-    return parts
-
-        .map(
-            part => {
-
-                return (
-                    part.text
-                    ||
-                    ""
-                );
-
-            }
-        )
-
-        .join("")
-
-        .trim();
 
 }
+catch(error){
 
 
+console.error(
+error
+);
 
-/* ==========================================================
-   INTERPRET
-========================================================== */
 
-
-async function fetchInterpretation() {
-
-
-    if (
-        isWorking
-    ) {
-
-
-        return;
-
-    }
-
-
-    const input =
-        document
-            .getElementById(
-                "dreamInput"
-            )
-            .value
-            .trim();
-
-
-    if (
-        !input
-    ) {
-
-
-        alert(
-            "براہِ کرم پہلے اپنا خواب لکھیں۔"
-        );
-
-
-        return;
-
-    }
-
-
-    const apiKey =
-        (
-            localStorage
-                .getItem(
-                    "userGeminiKey"
-                )
-            ||
-            ""
-        )
-        .trim();
-
-
-    if (
-        !apiKey
-    ) {
-
-
-        openSettingsModal();
-
-
-        alert(
-            "پہلے سیٹنگز میں اپنی Gemini API Key محفوظ کریں۔"
-        );
-
-
-        return;
-
-    }
-
-
-    const loader =
-        document.getElementById(
-            "loader"
-        );
-
-
-    const resultCard =
-        document.getElementById(
-            "resultCard"
-        );
-
-
-    const resultText =
-        document.getElementById(
-            "resultText"
-        );
-
-
-    const submitBtn =
-        document.getElementById(
-            "submitBtn"
-        );
-
-
-    isWorking =
-        true;
-
-
-    submitBtn.disabled =
-        true;
-
-
-    loader.style.display =
-        "block";
-
-
-    resultCard.style.display =
-        "none";
-
-
-    document.getElementById(
-        "modelProgress"
-    ).textContent =
-        "بہترین دستیاب Gemini model تلاش کیا جا رہا ہے...";
-
-
-    loader.scrollIntoView({
-
-        behavior:
-            "smooth",
-
-        block:
-            "center"
-
-    });
-
-
-
-    const payload = {
-
-
-        systemInstruction: {
-
-            parts: [
-
-                {
-
-                    text:
-                        buildSystemPrompt()
-
-                }
-
-            ]
-
-        },
-
-
-        contents: [
-
-            {
-
-                role:
-                    "user",
-
-                parts: [
-
-                    {
-
-                        text:
-`خواب کی مکمل تفصیل:
-
-${input}
-
-براہِ کرم پورے خواب کو مجموعی سیاق میں سمجھیں اور معتبر اصولوں کی روشنی میں محتاط ممکنہ تعبیر بیان کریں۔`
-
-                    }
-
-                ]
-
-            }
-
-        ],
-
-
-        generationConfig: {
-
-            temperature:
-                0.35,
-
-            topP:
-                0.90,
-
-            maxOutputTokens:
-                2200
-
-        }
-
-    };
-
-
-
-    try {
-
-
-        const apiResult =
-            await makeGeminiRequest(
-                apiKey,
-                payload
-            );
-
-
-        if (
-            !apiResult.ok
-        ) {
-
-
-            throw new Error(
-
-                apiResult
-                    .data
-                    ?.error
-                    ?.message
-
-                ||
-
-                "تمام دستیاب models سے رابطہ نہیں ہو سکا۔"
-
-            );
-
-        }
-
-
-        const textOutput =
-            getResponseText(
-                apiResult.data
-            );
-
-
-        if (
-            !textOutput
-        ) {
-
-
-            throw new Error(
-                "AI نے خالی جواب دیا۔"
-            );
-
-        }
-
-
-        resultText.textContent =
-            textOutput;
-
-
-        resultCard.style.display =
-            "block";
-
-
-        saveToHistory(
-            input,
-            textOutput
-        );
-
-
-        resultCard.scrollIntoView({
-
-            behavior:
-                "smooth",
-
-            block:
-                "start"
-
-        });
-
-
-    }
-
-    catch (
-        error
-    ) {
-
-
-        console.error(
-            error
-        );
-
-
-        alert(
+alert(
 
 `تعبیر حاصل نہیں ہو سکی۔
 
-API کا پیغام:
-
 ${error.message}
 
-اگر Google کے models عارضی طور پر مصروف ہوں تو چند لمحوں بعد دوبارہ کوشش کریں۔`
+براہِ کرم انٹرنیٹ یا backend connection چیک کریں۔`
 
-        );
-
-
-    }
-
-    finally {
+);
 
 
-        loader.style.display =
-            "none";
+}
+finally{
 
 
-        submitBtn.disabled =
-            false;
+loader.style.display =
+"none";
 
 
-        isWorking =
-            false;
+submitBtn.disabled =
+false;
 
-    }
+
+isWorking =
+false;
+
 
 }
 
-
-
-/* ==========================================================
-   HISTORY
-========================================================== */
+}
 
 
 function saveToHistory(
-    dream,
-    result
-) {
+dream,
+answer
+){
+
+let history =
+JSON.parse(
+
+localStorage.getItem(
+"dreamHistory"
+)
+
+||
+
+"[]"
+
+);
 
 
-    let history =
-        JSON.parse(
-            localStorage
-                .getItem(
-                    "dreamHistory"
-                )
-            ||
-            "[]"
-        );
+history.unshift({
+
+dream:
+dream,
+
+result:
+answer,
+
+date:
+new Date()
+.toLocaleString(
+"ur-PK"
+)
+
+});
 
 
-    history.unshift({
-
-        dream:
-            dream,
-
-        result:
-            result,
-
-        date:
-            new Date()
-                .toLocaleString(
-                    "ur-PK"
-                )
-
-    });
+history =
+history.slice(
+0,
+50
+);
 
 
-    history =
-        history.slice(
-            0,
-            50
-        );
+localStorage.setItem(
 
+"dreamHistory",
 
-    localStorage.setItem(
+JSON.stringify(
+history
+)
 
-        "dreamHistory",
-
-        JSON.stringify(
-            history
-        )
-
-    );
+);
 
 }
 
 
+function escapeHtml(value){
 
-/* ==========================================================
-   HISTORY MODAL
-========================================================== */
+return String(value)
 
+.replace(
+/&/g,
+"&amp;"
+)
 
-function openHistoryModal() {
+.replace(
+/</g,
+"&lt;"
+)
 
+.replace(
+/>/g,
+"&gt;"
+)
 
-    const modal =
-        document.getElementById(
-            "historyModal"
-        );
+.replace(
+/"/g,
+"&quot;"
+)
 
+.replace(
+/'/g,
+"&#039;"
+);
 
-    const list =
-        document.getElementById(
-            "historyList"
-        );
-
-
-    const history =
-        JSON.parse(
-            localStorage
-                .getItem(
-                    "dreamHistory"
-                )
-            ||
-            "[]"
-        );
-
-
-    if (
-        history.length === 0
-    ) {
+}
 
 
-        list.innerHTML = `
+function openHistory(){
+
+const modal =
+document.getElementById(
+"historyModal"
+);
+
+
+const list =
+document.getElementById(
+"historyList"
+);
+
+
+const history =
+JSON.parse(
+
+localStorage.getItem(
+"dreamHistory"
+)
+
+||
+
+"[]"
+
+);
+
+
+if(
+history.length === 0
+){
+
+list.innerHTML = `
 
 <p
-    style="
-        text-align:center;
-        color:#64748b;
-        padding:20px;
-        font-size:12px;
-    "
+style="
+text-align:center;
+color:#64748b;
+padding:25px;
+font-size:12px;
+"
 >
-
 ابھی کوئی تعبیر محفوظ نہیں۔
-
 </p>
 
 `;
 
-
-    }
-
-    else {
+}
+else{
 
 
-        list.innerHTML =
-            history
+list.innerHTML =
+history
 
-            .map(
-                (
-                    item,
-                    index
-                ) => {
-
-
-                    return `
+.map(
+(item,index) => `
 
 <div class="history-item">
 
 <strong
-    style="
-        color:#064e3b;
-    "
+style="
+color:#064e3b;
+"
 >
 
-خواب #${history.length - index}
+خواب #${history.length-index}
 
 —
 
@@ -3866,7 +1814,7 @@ ${escapeHtml(item.date)}
 </strong>
 
 
-<p style="margin-top:6px;">
+<p style="margin-top:7px;">
 
 <strong>
 خواب:
@@ -3878,10 +1826,10 @@ ${escapeHtml(item.dream)}
 
 
 <p
-    style="
-        margin-top:7px;
-        white-space:pre-wrap;
-    "
+style="
+margin-top:7px;
+white-space:pre-wrap;
+"
 >
 
 <strong>
@@ -3894,416 +1842,221 @@ ${escapeHtml(item.result)}
 
 </div>
 
-`;
+`
+)
 
-
-                }
-            )
-
-            .join("");
-
-    }
-
-
-    modal.style.display =
-        "flex";
+.join("");
 
 }
 
 
-
-function closeHistoryModal() {
-
-
-    document.getElementById(
-        "historyModal"
-    ).style.display =
-        "none";
+modal.style.display =
+"flex";
 
 }
 
 
+function closeHistory(){
 
-function clearHistory() {
-
-
-    if (
-        !confirm(
-            "کیا تمام محفوظ تعبیرات حذف کر دی جائیں؟"
-        )
-    ) {
-
-
-        return;
-
-    }
-
-
-    localStorage.removeItem(
-        "dreamHistory"
-    );
-
-
-    openHistoryModal();
+document
+.getElementById(
+"historyModal"
+)
+.style
+.display =
+"none";
 
 }
 
 
+function clearHistory(){
 
-/* ==========================================================
-   SETTINGS
-========================================================== */
-
-
-function openSettingsModal() {
-
-
-    document.getElementById(
-        "settingsModal"
-    ).style.display =
-        "flex";
+if(
+!confirm(
+"کیا تمام محفوظ تعبیرات حذف کر دی جائیں؟"
+)
+){
+return;
+}
 
 
-    document.getElementById(
-        "userApiKeyInput"
-    ).value =
+localStorage.removeItem(
+"dreamHistory"
+);
 
-        localStorage.getItem(
-            "userGeminiKey"
-        )
 
-        ||
-
-        "";
+openHistory();
 
 }
 
 
+function openEtiquettes(){
 
-function closeSettingsModal() {
-
-
-    document.getElementById(
-        "settingsModal"
-    ).style.display =
-        "none";
-
-}
-
-
-
-function saveApiKey() {
-
-
-    const value =
-        document.getElementById(
-            "userApiKeyInput"
-        ).value.trim();
-
-
-    if (
-        !value
-    ) {
-
-
-        alert(
-            "API Key درج کریں۔"
-        );
-
-
-        return;
-
-    }
-
-
-    localStorage.setItem(
-        "userGeminiKey",
-        value
-    );
-
-
-    closeSettingsModal();
-
-
-    alert(
-        "API Key محفوظ ہو گئی ہے۔"
-    );
+document
+.getElementById(
+"etiquettesModal"
+)
+.style
+.display =
+"flex";
 
 }
 
 
+function closeEtiquettes(){
 
-function deleteApiKey() {
-
-
-    localStorage.removeItem(
-        "userGeminiKey"
-    );
-
-
-    document.getElementById(
-        "userApiKeyInput"
-    ).value =
-        "";
-
-
-    alert(
-        "API Key حذف ہو گئی ہے۔"
-    );
+document
+.getElementById(
+"etiquettesModal"
+)
+.style
+.display =
+"none";
 
 }
 
 
+async function copyResult(){
 
-/* ==========================================================
-   ETIQUETTES
-========================================================== */
+const text =
+document
+.getElementById(
+"resultText"
+)
+.innerText
+.trim();
 
 
-function openEtiquettesModal() {
+if(!text){
+return;
+}
 
 
-    document.getElementById(
-        "etiquettesModal"
-    ).style.display =
-        "flex";
+try{
+
+await navigator
+.clipboard
+.writeText(
+text
+);
+
+
+alert(
+"تعبیر کاپی ہو گئی ہے۔"
+);
+
+}
+catch{
+
+const temp =
+document.createElement(
+"textarea"
+);
+
+
+temp.value =
+text;
+
+
+document.body
+.appendChild(
+temp
+);
+
+
+temp.select();
+
+
+document.execCommand(
+"copy"
+);
+
+
+temp.remove();
+
+
+alert(
+"تعبیر کاپی ہو گئی ہے۔"
+);
+
+}
 
 }
 
 
+function shareWhatsApp(){
 
-function closeEtiquettesModal() {
+const result =
+document
+.getElementById(
+"resultText"
+)
+.innerText
+.trim();
 
 
-    document.getElementById(
-        "etiquettesModal"
-    ).style.display =
-        "none";
-
+if(!result){
+return;
 }
 
 
-
-/* ==========================================================
-   COPY
-========================================================== */
-
-
-async function copyResult() {
-
-
-    const text =
-        document.getElementById(
-            "resultText"
-        ).innerText.trim();
-
-
-    if (
-        !text
-    ) {
-
-
-        return;
-
-    }
-
-
-    try {
-
-
-        await navigator
-            .clipboard
-            .writeText(
-                text
-            );
-
-
-        alert(
-            "تعبیر کاپی ہو گئی ہے۔"
-        );
-
-
-    }
-
-    catch {
-
-
-        const temp =
-            document.createElement(
-                "textarea"
-            );
-
-
-        temp.value =
-            text;
-
-
-        document.body
-            .appendChild(
-                temp
-            );
-
-
-        temp.select();
-
-
-        document.execCommand(
-            "copy"
-        );
-
-
-        temp.remove();
-
-
-        alert(
-            "تعبیر کاپی ہو گئی ہے۔"
-        );
-
-    }
-
-}
-
-
-
-/* ==========================================================
-   WHATSAPP
-========================================================== */
-
-
-function shareWhatsApp() {
-
-
-    const result =
-        document.getElementById(
-            "resultText"
-        ).innerText.trim();
-
-
-    if (
-        !result
-    ) {
-
-
-        return;
-
-    }
-
-
-    const message =
-        encodeURIComponent(
+const message =
+encodeURIComponent(
 
 `تعبیر الرؤیا
 پیشکش: حذیفہ سعید
 
 ${result}`
 
-        );
-
-
-    window.open(
-
-        `https://api.whatsapp.com/send?text=${message}`,
-
-        "_blank",
-
-        "noopener"
-
-    );
-
-}
-
-
-
-/* ==========================================================
-   ESCAPE
-========================================================== */
-
-
-function escapeHtml(
-    value
-) {
-
-
-    return String(
-        value
-    )
-
-    .replace(
-        /&/g,
-        "&amp;"
-    )
-
-    .replace(
-        /</g,
-        "&lt;"
-    )
-
-    .replace(
-        />/g,
-        "&gt;"
-    )
-
-    .replace(
-        /"/g,
-        "&quot;"
-    )
-
-    .replace(
-        /'/g,
-        "&#039;"
-    );
-
-}
-
-
-
-/* ==========================================================
-   BACKDROP CLOSE
-========================================================== */
-
-
-[
-    "settingsModal",
-    "historyModal",
-    "etiquettesModal"
-]
-
-.forEach(
-    id => {
-
-
-        const modal =
-            document.getElementById(
-                id
-            );
-
-
-        modal.addEventListener(
-            "click",
-            event => {
-
-
-                if (
-                    event.target ===
-                    modal
-                ) {
-
-
-                    modal.style.display =
-                        "none";
-
-                }
-
-            }
-        );
-
-    }
 );
 
 
+window.open(
+
+`https://api.whatsapp.com/send?text=${message}`,
+
+"_blank",
+
+"noopener"
+
+);
+
+}
+
+
+[
+"historyModal",
+"etiquettesModal"
+]
+.forEach(
+id => {
+
+const modal =
+document.getElementById(
+id
+);
+
+
+modal.addEventListener(
+"click",
+event => {
+
+if(
+event.target === modal
+){
+
+modal.style.display =
+"none";
+
+}
+
+}
+);
+
+}
+);
+
 </script>
 
-
 </body>
-
-  </html>
+    </html>
