@@ -1,124 +1,188 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#064e3b">
 
-<title>تعبیر الرؤیا — پیشکش: حذیفہ سعید</title>
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+>
 
-<!-- Urdu & Arabic Fonts -->
+<meta
+    name="theme-color"
+    content="#064e3b"
+>
+
+<title>
+تعبیر الرؤیا — پیشکش: حذیفہ سعید
+</title>
+
+
+<!-- Urdu Fonts -->
+
 <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
-  rel="stylesheet"
-/>
+    href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+>
 
-<!-- Font Awesome -->
+
+<!-- FontAwesome -->
+
 <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+>
+
 
 <style>
 
 :root {
+
     --bg-dark: #070d17;
+
     --primary-emerald: #064e3b;
+
     --primary-green: #047857;
 
     --accent-gold: #d97706;
+
     --accent-gold-light: #fef3c7;
+
     --accent-gold-border: #f59e0b;
 
     --bg-color: #f8fafc;
+
     --card-bg: #ffffff;
 
     --text-main: #0f172a;
+
     --text-muted: #475569;
 
     --border-color: #e2e8f0;
 
-    --danger: #dc2626;
 }
 
 
-/* =========================
+/* ==============================
    GLOBAL
-========================= */
+============================== */
 
 * {
+
     box-sizing: border-box;
+
     margin: 0;
+
     padding: 0;
+
 }
+
 
 html,
 body {
+
     width: 100%;
+
     min-height: 100%;
+
 }
 
+
 body {
-    background-color: var(--bg-dark);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color:
+        var(--bg-dark);
 
-    min-height: 100vh;
-    min-height: 100dvh;
+    display:
+        flex;
 
-    padding: 8px;
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    min-height:
+        100vh;
+
+    min-height:
+        100dvh;
+
+    padding:
+        8px;
 
     font-family:
         'Noto Nastaliq Urdu',
         'Noto Sans Arabic',
         serif;
+
 }
 
 
-/* =========================
-   APP FRAME
-========================= */
+/* ==============================
+   APP
+============================== */
 
 .app-frame {
 
-    width: 100%;
-    max-width: 460px;
+    width:
+        100%;
 
-    height: calc(100vh - 16px);
-    height: calc(100dvh - 16px);
+    max-width:
+        460px;
 
-    max-height: 940px;
+    height:
+        calc(100vh - 16px);
 
-    background-color: var(--bg-color);
+    height:
+        calc(100dvh - 16px);
 
-    display: flex;
-    flex-direction: column;
+    max-height:
+        940px;
 
-    position: relative;
+    background-color:
+        var(--bg-color);
 
-    border-radius: 28px;
+    display:
+        flex;
 
-    overflow: hidden;
+    flex-direction:
+        column;
 
     box-shadow:
         0 25px 60px -12px
         rgba(0, 0, 0, 0.75);
 
+    border-radius:
+        28px;
+
+    overflow:
+        hidden;
+
+    position:
+        relative;
+
     border:
         1px solid
-        rgba(255,255,255,0.1);
+        rgba(
+            255,
+            255,
+            255,
+            0.1
+        );
+
 }
 
 
-/* =========================
+/* ==============================
    HEADER
-========================= */
+============================== */
 
 .app-header {
 
-    flex-shrink: 0;
+    flex-shrink:
+        0;
 
     background:
         linear-gradient(
@@ -127,49 +191,61 @@ body {
             #064e3b
         );
 
-    color: #ffffff;
+    color:
+        #ffffff;
 
     padding:
         18px
         18px
         15px;
 
-    text-align: center;
+    text-align:
+        center;
 
     box-shadow:
         0 4px 20px
         rgba(0,0,0,0.15);
 
-    position: relative;
+    position:
+        relative;
 
     border-bottom:
         2.5px solid
         var(--accent-gold);
+
 }
 
 
 .header-top-bar {
 
-    display: grid;
+    display:
+        grid;
 
     grid-template-columns:
         auto
         1fr
         auto;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 8px;
+    gap:
+        8px;
 
-    margin-bottom: 5px;
+    margin-bottom:
+        5px;
+
 }
 
 
 .header-actions {
 
-    display: flex;
+    display:
+        flex;
 
-    gap: 6px;
+    gap:
+        6px;
+
 }
 
 
@@ -195,23 +271,30 @@ body {
     color:
         #fef08a;
 
-    width: 39px;
-    height: 39px;
+    width:
+        39px;
 
-    border-radius: 12px;
+    height:
+        39px;
 
-    cursor: pointer;
+    border-radius:
+        12px;
 
-    display: flex;
+    cursor:
+        pointer;
 
-    align-items: center;
-    justify-content: center;
+    display:
+        flex;
 
-    font-size: 15px;
+    align-items:
+        center;
 
-    transition:
-        all
-        0.2s ease;
+    justify-content:
+        center;
+
+    font-size:
+        15px;
+
 }
 
 
@@ -220,32 +303,27 @@ body {
     transform:
         scale(0.92);
 
-    background:
-        rgba(
-            217,
-            119,
-            6,
-            0.30
-        );
 }
 
 
 .app-header h1 {
 
-    font-size: 24px;
+    font-size:
+        24px;
 
-    line-height: 1.7;
+    line-height:
+        1.7;
 
-    color: #fbbf24;
+    color:
+        #fbbf24;
 
-    font-weight: 700;
-
-    letter-spacing:
-        0.5px;
+    font-weight:
+        700;
 
     text-shadow:
         0 2px 4px
         rgba(0,0,0,0.3);
+
 }
 
 
@@ -255,7 +333,8 @@ body {
         'Noto Sans Arabic',
         sans-serif;
 
-    font-size: 11px;
+    font-size:
+        11px;
 
     background:
         rgba(
@@ -272,7 +351,8 @@ body {
         inline-block;
 
     padding:
-        4px 18px;
+        4px
+        18px;
 
     border-radius:
         20px;
@@ -283,16 +363,18 @@ body {
 
     margin-top:
         3px;
+
 }
 
 
-/* =========================
-   MAIN SCROLL
-========================= */
+/* ==============================
+   MAIN
+============================== */
 
 .main-scroll {
 
-    flex: 1;
+    flex:
+        1;
 
     padding:
         15px;
@@ -312,14 +394,12 @@ body {
     scroll-behavior:
         smooth;
 
-    overscroll-behavior:
-        contain;
 }
 
 
-/* =========================
+/* ==============================
    WELCOME
-========================= */
+============================== */
 
 .welcome-card {
 
@@ -348,6 +428,7 @@ body {
     border-right:
         5px solid
         var(--primary-green);
+
 }
 
 
@@ -370,6 +451,7 @@ body {
 
     gap:
         7px;
+
 }
 
 
@@ -383,6 +465,7 @@ body {
 
     color:
         var(--text-muted);
+
 }
 
 
@@ -413,12 +496,13 @@ body {
 
     line-height:
         2.1;
+
 }
 
 
-/* =========================
+/* ==============================
    POLLS
-========================= */
+============================== */
 
 .poll-card {
 
@@ -438,6 +522,7 @@ body {
     border:
         1px solid
         var(--border-color);
+
 }
 
 
@@ -445,13 +530,7 @@ body {
 
     margin-bottom:
         15px;
-}
 
-
-.poll-group:last-child {
-
-    margin-bottom:
-        0;
 }
 
 
@@ -477,6 +556,7 @@ body {
 
     gap:
         7px;
+
 }
 
 
@@ -493,6 +573,7 @@ body {
 
     gap:
         7px;
+
 }
 
 
@@ -524,15 +605,9 @@ body {
     cursor:
         pointer;
 
-    text-align:
-        center;
-
-    transition:
-        all
-        0.2s ease;
-
     font-weight:
         600;
+
 }
 
 
@@ -546,7 +621,7 @@ body {
         );
 
     color:
-        #ffffff;
+        white;
 
     border-color:
         var(--primary-emerald);
@@ -559,12 +634,13 @@ body {
             87,
             0.30
         );
+
 }
 
 
-/* =========================
-   ADVANCED DETAILS
-========================= */
+/* ==============================
+   ADVANCED
+============================== */
 
 .more-details-toggle {
 
@@ -608,9 +684,6 @@ body {
     gap:
         8px;
 
-    transition:
-        all
-        0.2s;
 }
 
 
@@ -626,24 +699,23 @@ body {
         max-height
         0.35s ease;
 
-    margin-top:
-        0;
 }
 
 
 .collapsible-content.open {
 
     max-height:
-        400px;
+        420px;
 
     margin-top:
         13px;
+
 }
 
 
-/* =========================
+/* ==============================
    INPUT
-========================= */
+============================== */
 
 .input-card {
 
@@ -663,6 +735,7 @@ body {
     border:
         1px solid
         var(--border-color);
+
 }
 
 
@@ -682,6 +755,7 @@ body {
 
     display:
         block;
+
 }
 
 
@@ -715,15 +789,12 @@ textarea {
     outline:
         none;
 
-    transition:
-        all
-        0.25s ease;
-
     background:
         #fafafa;
 
     color:
         #0f172a;
+
 }
 
 
@@ -743,12 +814,13 @@ textarea:focus {
             87,
             0.12
         );
+
 }
 
 
-/* =========================
+/* ==============================
    SUBMIT
-========================= */
+============================== */
 
 .submit-btn {
 
@@ -807,32 +879,23 @@ textarea:focus {
     gap:
         10px;
 
-    transition:
-        all
-        0.15s;
-}
-
-
-.submit-btn:active {
-
-    transform:
-        scale(0.98);
 }
 
 
 .submit-btn:disabled {
 
     opacity:
-        0.65;
+        0.60;
 
     cursor:
         not-allowed;
+
 }
 
 
-/* =========================
+/* ==============================
    LOADER
-========================= */
+============================== */
 
 .loader-box {
 
@@ -854,6 +917,7 @@ textarea:focus {
     border:
         1px solid
         var(--border-color);
+
 }
 
 
@@ -882,19 +946,24 @@ textarea:focus {
 
     margin:
         0 auto 12px;
+
 }
 
 
 @keyframes spin {
 
     from {
+
         transform:
             rotate(0deg);
+
     }
 
     to {
+
         transform:
             rotate(360deg);
+
     }
 
 }
@@ -913,12 +982,31 @@ textarea:focus {
 
     font-weight:
         600;
+
 }
 
 
-/* =========================
+.model-progress {
+
+    font-family:
+        'Noto Sans Arabic',
+        sans-serif;
+
+    font-size:
+        10px;
+
+    margin-top:
+        7px;
+
+    color:
+        #64748b;
+
+}
+
+
+/* ==============================
    RESULT
-========================= */
+============================== */
 
 .result-card {
 
@@ -941,6 +1029,7 @@ textarea:focus {
     border:
         1px solid
         #d1fae5;
+
 }
 
 
@@ -976,6 +1065,7 @@ textarea:focus {
 
     gap:
         8px;
+
 }
 
 
@@ -985,14 +1075,12 @@ textarea:focus {
         'Noto Sans Arabic',
         sans-serif;
 
-    white-space:
-        nowrap;
-
     font-size:
         10px;
 
     color:
         #10b981;
+
 }
 
 
@@ -1015,12 +1103,9 @@ textarea:focus {
 
     word-wrap:
         break-word;
+
 }
 
-
-/* =========================
-   RESULT ACTIONS
-========================= */
 
 .action-bar {
 
@@ -1032,6 +1117,7 @@ textarea:focus {
 
     margin-bottom:
         14px;
+
 }
 
 
@@ -1062,20 +1148,9 @@ textarea:focus {
     cursor:
         pointer;
 
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    gap:
-        6px;
-
     font-weight:
         bold;
+
 }
 
 
@@ -1089,12 +1164,13 @@ textarea:focus {
 
     border-color:
         #128c7e;
+
 }
 
 
-/* =========================
+/* ==============================
    ADVICE
-========================= */
+============================== */
 
 .advice-box {
 
@@ -1119,6 +1195,7 @@ textarea:focus {
 
     line-height:
         2.1;
+
 }
 
 
@@ -1127,17 +1204,15 @@ textarea:focus {
     display:
         block;
 
-    margin-bottom:
-        5px;
-
     color:
         #78350f;
+
 }
 
 
-/* =========================
-   DAILY TIP
-========================= */
+/* ==============================
+   PRINCIPLE
+============================== */
 
 .daily-tip {
 
@@ -1157,6 +1232,7 @@ textarea:focus {
     border:
         1px solid
         #bbf7d0;
+
 }
 
 
@@ -1168,8 +1244,6 @@ textarea:focus {
     color:
         var(--primary-emerald);
 
-    margin-bottom:
-        5px;
 }
 
 
@@ -1183,12 +1257,13 @@ textarea:focus {
 
     line-height:
         2.1;
+
 }
 
 
-/* =========================
-   MODALS
-========================= */
+/* ==============================
+   MODAL
+============================== */
 
 .modal-overlay {
 
@@ -1215,6 +1290,7 @@ textarea:focus {
 
     backdrop-filter:
         blur(4px);
+
 }
 
 
@@ -1240,24 +1316,6 @@ textarea:focus {
 
     overflow-y:
         auto;
-
-    animation:
-        slideUp
-        0.3s ease-out;
-}
-
-
-@keyframes slideUp {
-
-    from {
-        transform:
-            translateY(100%);
-    }
-
-    to {
-        transform:
-            translateY(0);
-    }
 
 }
 
@@ -1288,6 +1346,7 @@ textarea:focus {
 
     font-weight:
         bold;
+
 }
 
 
@@ -1311,12 +1370,13 @@ textarea:focus {
 
     cursor:
         pointer;
+
 }
 
 
-/* =========================
+/* ==============================
    SETTINGS
-========================= */
+============================== */
 
 .settings-input {
 
@@ -1340,14 +1400,12 @@ textarea:focus {
     font-size:
         12px;
 
-    margin-top:
-        8px;
-
-    margin-bottom:
-        8px;
+    margin:
+        8px 0;
 
     direction:
         ltr;
+
 }
 
 
@@ -1364,6 +1422,7 @@ textarea:focus {
 
     margin-bottom:
         14px;
+
 }
 
 
@@ -1392,6 +1451,7 @@ textarea:focus {
 
     cursor:
         pointer;
+
 }
 
 
@@ -1407,7 +1467,7 @@ textarea:focus {
         10px;
 
     background:
-        #fff;
+        #ffffff;
 
     color:
         #dc2626;
@@ -1421,12 +1481,13 @@ textarea:focus {
 
     cursor:
         pointer;
+
 }
 
 
-/* =========================
+/* ==============================
    HISTORY
-========================= */
+============================== */
 
 .history-item {
 
@@ -1452,14 +1513,12 @@ textarea:focus {
     line-height:
         2.1;
 
-    overflow-wrap:
-        anywhere;
 }
 
 
-/* =========================
+/* ==============================
    ETIQUETTES
-========================= */
+============================== */
 
 .etiquette-item {
 
@@ -1485,19 +1544,23 @@ textarea:focus {
 
     line-height:
         2.1;
+
 }
 
 
-/* =========================
+/* ==============================
    MOBILE
-========================= */
+============================== */
 
-@media (max-width: 500px) {
+@media(max-width:500px) {
 
     body {
+
         padding:
             0;
+
     }
+
 
     .app-frame {
 
@@ -1518,11 +1581,13 @@ textarea:focus {
 
         border:
             none;
+
     }
 
 }
 
 </style>
+
 </head>
 
 
@@ -1532,69 +1597,72 @@ textarea:focus {
 <div class="app-frame">
 
 
-<!-- =========================================
-     HEADER
-========================================= -->
+<!-- HEADER -->
 
 <header class="app-header">
 
-    <div class="header-top-bar">
 
-        <div class="header-actions">
-
-            <button
-                class="icon-btn"
-                type="button"
-                onclick="openHistoryModal()"
-                title="محفوظ تعبیرات"
-            >
-                <i class="fas fa-history"></i>
-            </button>
-
-            <button
-                class="icon-btn"
-                type="button"
-                onclick="openSettingsModal()"
-                title="سیٹنگز"
-            >
-                <i class="fas fa-cog"></i>
-            </button>
-
-        </div>
+<div class="header-top-bar">
 
 
-        <h1>
-            تعبیر الرؤیا
-        </h1>
+<div class="header-actions">
 
 
-        <button
-            class="icon-btn"
-            type="button"
-            onclick="openEtiquettesModal()"
-            title="شرعی آداب"
-        >
-            <i class="fas fa-book-quran"></i>
-        </button>
+<button
+    class="icon-btn"
+    onclick="openHistoryModal()"
+>
 
-    </div>
+<i class="fas fa-history"></i>
+
+</button>
 
 
-    <div class="developer-tag">
+<button
+    class="icon-btn"
+    onclick="openSettingsModal()"
+>
 
-        <i class="fas fa-feather-alt"></i>
+<i class="fas fa-cog"></i>
 
-        پیشکش: حذیفہ سعید
+</button>
 
-    </div>
+
+</div>
+
+
+<h1>
+تعبیر الرؤیا
+</h1>
+
+
+<button
+    class="icon-btn"
+    onclick="openEtiquettesModal()"
+>
+
+<i class="fas fa-book-quran"></i>
+
+</button>
+
+
+</div>
+
+
+<div class="developer-tag">
+
+<i class="fas fa-feather-alt"></i>
+
+پیشکش: حذیفہ سعید
+
+</div>
+
 
 </header>
 
 
 
-<!-- =========================================
-     MAIN CONTENT
-========================================= -->
+<!-- MAIN -->
 
 <main
     class="main-scroll"
@@ -1606,519 +1674,532 @@ textarea:focus {
 
 <section class="welcome-card">
 
-    <h2>
 
-        <i
-            class="fas fa-moon"
-            style="color:var(--accent-gold)"
-        ></i>
+<h2>
 
-        السلام علیکم ورحمۃ اللہ!
+<i class="fas fa-moon"></i>
 
-    </h2>
+السلام علیکم ورحمۃ اللہ!
+
+</h2>
 
 
-    <p>
-        نیک خواب کے بارے میں صحیح احادیث میں آیا ہے
-        کہ وہ نبوت کے چھیالیس حصوں میں سے ایک حصہ ہیں۔
-        ہر خواب لازماً قابلِ تعبیر نہیں ہوتا؛
-        بعض خواب نیک رؤیا، بعض پریشان کن خواب
-        اور بعض روزمرہ خیالات یعنی حدیثُ النفس بھی ہو سکتے ہیں۔
-    </p>
+<p>
+
+نیک خواب کے بارے میں صحیح احادیث میں
+نبوت کے اجزاء میں سے ایک جزء ہونے کا ذکر ملتا ہے۔
+
+ہر خواب لازماً قابلِ تعبیر نہیں ہوتا۔
+
+بعض نیک رؤیا،
+بعض پریشان کن خواب
+اور بعض حدیثُ النفس ہو سکتے ہیں۔
+
+</p>
 
 
-    <p style="margin-top:7px;">
-        اگر آپ کو خواب کا وقت، مقام، موسم اور اپنی کیفیت یاد ہو
-        تو نیچے درج کر دیں۔ اگر یاد نہ ہو تو قریب ترین مناسب آپشن منتخب کریں۔
-    </p>
+<div class="important-note">
 
+خواب کی اصل حقیقت اور درست ترین تعبیر
+اللہ تعالیٰ ہی بہتر جانتا ہے۔
 
-    <div class="important-note">
+یہاں پیش کی جانے والی تعبیر
+ایک محتاط ممکنہ تعبیر ہے،
+قطعی علمِ غیب نہیں۔
 
-        خواب کی اصل حقیقت اور درست ترین تعبیر
-        اللہ تعالیٰ ہی بہتر جانتا ہے۔
-        یہاں پیش کی جانے والی تعبیر
-        ممکنہ اور محتاط تعبیر ہوگی،
-        قطعی علمِ غیب نہیں۔
+</div>
 
-    </div>
 
 </section>
 
 
 
-<!-- =========================================
-     POLL CARD
-========================================= -->
+<!-- POLLS -->
 
 <section class="poll-card">
 
 
-<!-- SEASON -->
-
 <div class="poll-group">
 
-    <div class="poll-label">
 
-        <i class="fas fa-cloud-sun-rain"></i>
+<div class="poll-label">
 
-        خواب کس موسم میں دیکھا گیا؟
+<i class="fas fa-cloud-sun-rain"></i>
 
-    </div>
+موسم:
+
+</div>
 
 
-    <div
-        class="poll-options"
-        id="seasonPoll"
-    >
+<div
+    class="poll-options"
+    id="seasonPoll"
+>
 
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('seasonPoll',this,'سردی')"
-        >
-            سردی
-        </button>
 
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('seasonPoll',this,'گرمی')"
-        >
-            گرمی
-        </button>
+<button
+    class="poll-btn"
+    onclick="selectPoll('seasonPoll',this,'سردی')"
+>
+سردی
+</button>
 
-        <button
-            class="poll-btn selected"
-            type="button"
-            onclick="selectPoll('seasonPoll',this,'معلوم نہیں')"
-        >
-            معلوم نہیں
-        </button>
 
-    </div>
+<button
+    class="poll-btn"
+    onclick="selectPoll('seasonPoll',this,'گرمی')"
+>
+گرمی
+</button>
+
+
+<button
+    class="poll-btn selected"
+    onclick="selectPoll('seasonPoll',this,'معلوم نہیں')"
+>
+معلوم نہیں
+</button>
+
+
+</div>
+
 
 </div>
 
 
 
-<!-- LOCATION -->
-
 <div class="poll-group">
 
-    <div class="poll-label">
 
-        <i class="fas fa-map-marker-alt"></i>
+<div class="poll-label">
 
-        خواب میں نمایاں مقام:
+<i class="fas fa-location-dot"></i>
 
-    </div>
+مقام:
+
+</div>
 
 
-    <div
-        class="poll-options"
-        id="locationPoll"
-    >
+<div
+    class="poll-options"
+    id="locationPoll"
+>
 
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('locationPoll',this,'اپنا گھر')"
-        >
-            اپنا گھر
-        </button>
 
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('locationPoll',this,'باہر یا راستہ')"
-        >
-            باہر / راستہ
-        </button>
+<button
+    class="poll-btn"
+    onclick="selectPoll('locationPoll',this,'اپنا گھر')"
+>
+گھر
+</button>
 
-        <button
-            class="poll-btn selected"
-            type="button"
-            onclick="selectPoll('locationPoll',this,'معلوم نہیں یا دیگر مقام')"
-        >
-            دیگر / نامعلوم
-        </button>
 
-    </div>
+<button
+    class="poll-btn"
+    onclick="selectPoll('locationPoll',this,'باہر یا راستہ')"
+>
+باہر / راستہ
+</button>
+
+
+<button
+    class="poll-btn selected"
+    onclick="selectPoll('locationPoll',this,'معلوم نہیں یا دیگر مقام')"
+>
+دیگر
+</button>
+
+
+</div>
+
 
 </div>
 
 
 
-<!-- TIME -->
-
 <div class="poll-group">
 
-    <div class="poll-label">
 
-        <i class="fas fa-clock"></i>
+<div class="poll-label">
 
-        خواب دیکھنے کا وقت:
+<i class="fas fa-clock"></i>
 
-    </div>
-
-
-    <div
-        class="poll-options"
-        id="timePoll"
-    >
-
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('timePoll',this,'رات کا آخری حصہ')"
-        >
-            آخری پہر
-        </button>
-
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('timePoll',this,'دن کے وقت')"
-        >
-            دن
-        </button>
-
-        <button
-            class="poll-btn selected"
-            type="button"
-            onclick="selectPoll('timePoll',this,'یاد نہیں')"
-        >
-            یاد نہیں
-        </button>
-
-    </div>
+وقت:
 
 </div>
 
 
+<div
+    class="poll-options"
+    id="timePoll"
+>
 
-<!-- ADVANCED TOGGLE -->
+
+<button
+    class="poll-btn"
+    onclick="selectPoll('timePoll',this,'رات کا آخری حصہ')"
+>
+آخری پہر
+</button>
+
+
+<button
+    class="poll-btn"
+    onclick="selectPoll('timePoll',this,'دن کے وقت')"
+>
+دن
+</button>
+
+
+<button
+    class="poll-btn selected"
+    onclick="selectPoll('timePoll',this,'یاد نہیں')"
+>
+یاد نہیں
+</button>
+
+
+</div>
+
+
+</div>
+
+
 
 <button
     class="more-details-toggle"
-    type="button"
     onclick="toggleAdvancedDetails()"
 >
 
-    <i class="fas fa-sliders-h"></i>
 
-    <span>
-        مزید تفصیلات شامل کریں
-    </span>
+<i class="fas fa-sliders"></i>
 
-    <i
-        class="fas fa-chevron-down"
-        id="toggleIcon"
-    ></i>
+
+مزید تفصیلات شامل کریں
+
+
+<i
+    id="toggleIcon"
+    class="fas fa-chevron-down"
+></i>
+
 
 </button>
 
 
 
 <div
-    class="collapsible-content"
     id="advancedContent"
+    class="collapsible-content"
 >
 
-
-<!-- STATUS -->
-
-<div
-    class="poll-group"
-    style="margin-top:12px"
->
-
-    <div class="poll-label">
-
-        <i class="fas fa-user"></i>
-
-        خواب دیکھنے والے کی حالت:
-
-    </div>
-
-
-    <div
-        class="poll-options"
-        id="statusPoll"
-    >
-
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('statusPoll',this,'غیر شادی شدہ')"
-        >
-            غیر شادی شدہ
-        </button>
-
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('statusPoll',this,'شادی شدہ')"
-        >
-            شادی شدہ
-        </button>
-
-        <button
-            class="poll-btn selected"
-            type="button"
-            onclick="selectPoll('statusPoll',this,'معلوم نہیں یا دیگر')"
-        >
-            دیگر
-        </button>
-
-    </div>
-
-</div>
-
-
-
-<!-- EMOTION -->
 
 <div class="poll-group">
 
-    <div class="poll-label">
 
-        <i class="fas fa-heartbeat"></i>
+<div class="poll-label">
 
-        بیدار ہوتے وقت کیفیت:
+<i class="fas fa-user"></i>
 
-    </div>
+خواب دیکھنے والے کی حالت:
+
+</div>
 
 
-    <div
-        class="poll-options"
-        id="emotionPoll"
-    >
+<div
+    class="poll-options"
+    id="statusPoll"
+>
 
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('emotionPoll',this,'اطمینان یا خوشی')"
-        >
-            اطمینان
-        </button>
 
-        <button
-            class="poll-btn"
-            type="button"
-            onclick="selectPoll('emotionPoll',this,'خوف یا پریشانی')"
-        >
-            خوف
-        </button>
+<button
+    class="poll-btn"
+    onclick="selectPoll('statusPoll',this,'غیر شادی شدہ')"
+>
+غیر شادی شدہ
+</button>
 
-        <button
-            class="poll-btn selected"
-            type="button"
-            onclick="selectPoll('emotionPoll',this,'واضح نہیں')"
-        >
-            واضح نہیں
-        </button>
 
-    </div>
+<button
+    class="poll-btn"
+    onclick="selectPoll('statusPoll',this,'شادی شدہ')"
+>
+شادی شدہ
+</button>
+
+
+<button
+    class="poll-btn selected"
+    onclick="selectPoll('statusPoll',this,'معلوم نہیں یا دیگر')"
+>
+دیگر
+</button>
+
 
 </div>
 
 
 </div>
+
+
+
+<div class="poll-group">
+
+
+<div class="poll-label">
+
+<i class="fas fa-heart"></i>
+
+بیدار ہونے کے بعد کیفیت:
+
+</div>
+
+
+<div
+    class="poll-options"
+    id="emotionPoll"
+>
+
+
+<button
+    class="poll-btn"
+    onclick="selectPoll('emotionPoll',this,'اطمینان یا خوشی')"
+>
+اطمینان
+</button>
+
+
+<button
+    class="poll-btn"
+    onclick="selectPoll('emotionPoll',this,'خوف یا پریشانی')"
+>
+خوف
+</button>
+
+
+<button
+    class="poll-btn selected"
+    onclick="selectPoll('emotionPoll',this,'واضح نہیں')"
+>
+واضح نہیں
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
 
 </section>
 
 
 
-<!-- =========================================
-     DREAM INPUT
-========================================= -->
+<!-- INPUT -->
 
 <section class="input-card">
 
-    <label for="dreamInput">
 
-        <i class="fas fa-pen-nib"></i>
+<label for="dreamInput">
 
-        اپنا خواب مکمل لکھیں:
+<i class="fas fa-pen-nib"></i>
 
-    </label>
+اپنا خواب مکمل لکھیں:
 
-
-    <textarea
-        id="dreamInput"
-        placeholder="خواب جیسا دیکھا ہے ویسا ہی تحریر کریں۔ لوگوں، جگہ، گفتگو، رنگ، احساسات اور اہم واقعات بھی لکھ سکتے ہیں..."
-    ></textarea>
+</label>
 
 
-    <button
-        class="submit-btn"
-        id="submitBtn"
-        type="button"
-        onclick="fetchInterpretation()"
-    >
+<textarea
+    id="dreamInput"
+    placeholder="خواب جیسا دیکھا ہے ویسا ہی مکمل لکھیں..."
+></textarea>
 
-        <i class="fas fa-magnifying-glass"></i>
 
-        <span>
-            تعبیر معلوم کریں
-        </span>
+<button
+    id="submitBtn"
+    class="submit-btn"
+    onclick="fetchInterpretation()"
+>
 
-    </button>
+
+<i class="fas fa-search"></i>
+
+
+تعبیر معلوم کریں
+
+
+</button>
+
 
 </section>
 
 
 
-<!-- =========================================
-     LOADER
-========================================= -->
+<!-- LOADER -->
 
 <section
     class="loader-box"
     id="loader"
 >
 
-    <div class="spinner"></div>
 
-    <div class="loader-text">
+<div class="spinner"></div>
 
-        خواب کے مکمل سیاق،
-        معتبر اصولِ تعبیر
-        اور دستیاب مصادر کی روشنی میں
-        جواب تیار کیا جا رہا ہے...
 
-    </div>
+<div class="loader-text">
+
+خواب کے مکمل سیاق
+اور معتبر اصولِ تعبیر کی روشنی میں
+جواب تیار کیا جا رہا ہے...
+
+</div>
+
+
+<div
+    id="modelProgress"
+    class="model-progress"
+></div>
+
 
 </section>
 
 
 
-<!-- =========================================
-     RESULT
-========================================= -->
+<!-- RESULT -->
 
 <section
     class="result-card"
     id="resultCard"
 >
 
-    <div class="result-header">
 
-        <span>
-            الجواب وبالله التوفيق
-        </span>
-
-        <span class="result-status">
-
-            <i class="fas fa-circle-check"></i>
-
-            محتاط تعبیر
-
-        </span>
-
-    </div>
+<div class="result-header">
 
 
-    <div
-        class="result-body"
-        id="resultText"
-    ></div>
+<span>
+الجواب وبالله التوفيق
+</span>
 
 
-    <div class="action-bar">
+<span class="result-status">
 
-        <button
-            class="action-btn"
-            type="button"
-            onclick="copyResult()"
-        >
+<i class="fas fa-circle-check"></i>
 
-            <i class="fas fa-copy"></i>
+محتاط تعبیر
 
-            کاپی کریں
-
-        </button>
+</span>
 
 
-        <button
-            class="action-btn whatsapp"
-            type="button"
-            onclick="shareWhatsApp()"
-        >
-
-            <i class="fab fa-whatsapp"></i>
-
-            واٹس ایپ
-
-        </button>
-
-    </div>
+</div>
 
 
-
-    <div class="advice-box">
-
-        <strong>
-
-            <i class="fas fa-hand-holding-heart"></i>
-
-            خواب سے متعلق مسنون رہنمائی:
-
-        </strong>
+<div
+    class="result-body"
+    id="resultText"
+></div>
 
 
-        اگر خواب اچھا اور خوشگوار ہو
-        تو اللہ تعالیٰ کا شکر ادا کریں
-        اور اسے کسی خیر خواہ سے بیان کر سکتے ہیں۔
+<div class="action-bar">
 
-        <br><br>
 
-        اگر خواب پریشان کن یا خوفناک ہو
-        تو بائیں جانب ہلکا سا تین مرتبہ تھتکاریں،
-        اللہ تعالیٰ سے اس خواب کے شر
-        اور شیطان سے پناہ مانگیں،
-        کروٹ بدل لیں
-        اور اسے لوگوں سے بیان نہ کریں۔
+<button
+    class="action-btn"
+    onclick="copyResult()"
+>
 
-        <br><br>
+<i class="fas fa-copy"></i>
 
-        صدقہ کرنا اپنی جگہ ایک نیکی ہے،
-        لیکن اسے ہر برے خواب کا
-        لازمی یا یقینی علاج نہ سمجھا جائے۔
+کاپی کریں
 
-    </div>
+</button>
+
+
+<button
+    class="action-btn whatsapp"
+    onclick="shareWhatsApp()"
+>
+
+<i class="fab fa-whatsapp"></i>
+
+واٹس ایپ
+
+</button>
+
+
+</div>
+
+
+
+<div class="advice-box">
+
+
+<strong>
+
+<i class="fas fa-hand-holding-heart"></i>
+
+مسنون رہنمائی
+
+</strong>
+
+
+اگر خواب اچھا ہو
+تو اللہ تعالیٰ کا شکر ادا کریں۔
+
+
+<br><br>
+
+
+اگر خواب پریشان کن ہو
+تو بائیں جانب ہلکا سا تین مرتبہ تھتکاریں،
+اللہ تعالیٰ سے اس کے شر
+اور شیطان سے پناہ مانگیں،
+کروٹ بدلیں
+اور اسے لوگوں سے بیان نہ کریں۔
+
+
+<br><br>
+
+
+صدقہ کرنا نیکی ہے،
+لیکن اسے ہر خواب کا
+لازمی یا یقینی علاج نہ سمجھا جائے۔
+
+
+</div>
+
 
 </section>
 
 
 
-<!-- =========================================
-     PRINCIPLE CARD
-========================================= -->
-
 <section class="daily-tip">
 
-    <h3>
 
-        <i class="fas fa-book-open"></i>
+<h3>
 
-        اصولِ تعبیر
+<i class="fas fa-book-open"></i>
 
-    </h3>
+اصولِ تعبیر
 
-    <p>
+</h3>
 
-        ایک ہی علامت ہر شخص کے لیے
-        لازماً ایک ہی تعبیر نہیں رکھتی۔
-        خواب کا پورا سیاق،
-        خواب دیکھنے والے کے حالات،
-        اس کے احساسات
-        اور دوسری علامات
-        ممکنہ تعبیر پر اثرانداز ہو سکتی ہیں۔
 
-    </p>
+<p>
+
+ایک ہی علامت ہر شخص کے لیے
+لازماً ایک ہی تعبیر نہیں رکھتی۔
+
+خواب کا پورا سیاق،
+خواب دیکھنے والے کے حالات،
+اس کے احساسات
+اور دوسری علامات
+ممکنہ تعبیر پر اثرانداز ہو سکتی ہیں۔
+
+</p>
+
 
 </section>
 
@@ -2127,262 +2208,250 @@ textarea:focus {
 
 
 
-<!-- =========================================
-     SETTINGS MODAL
-========================================= -->
+<!-- SETTINGS -->
 
 <div
     class="modal-overlay"
     id="settingsModal"
 >
 
-    <div class="modal-body">
 
-        <div class="modal-header">
-
-            <span>
-
-                <i class="fas fa-cog"></i>
-
-                سسٹم سیٹنگز
-
-            </span>
+<div class="modal-body">
 
 
-            <button
-                type="button"
-                class="modal-close"
-                onclick="closeSettingsModal()"
-            >
-                ✕
-            </button>
-
-        </div>
+<div class="modal-header">
 
 
-        <p
-            style="
-                font-size:12px;
-                color:#475569;
-                line-height:2;
-            "
-        >
+<span>
 
-            اپنی Gemini API Key درج کریں۔
+<i class="fas fa-cog"></i>
 
-        </p>
+سسٹم سیٹنگز
+
+</span>
 
 
-        <input
-            type="password"
-            id="userApiKeyInput"
-            class="settings-input"
-            placeholder="Gemini API Key"
-            autocomplete="off"
-        >
+<button
+    class="modal-close"
+    onclick="closeSettingsModal()"
+>
+
+✕
+
+</button>
 
 
-        <div class="settings-help">
-
-            یہ طریقہ ذاتی ٹیسٹنگ کے لیے ہے۔
-            اگر آپ ایپ یا ویب سائٹ عوام کو دیں
-            تو API Key کو HTML میں محفوظ کرنا
-            محفوظ طریقہ نہیں۔
-            Public version میں backend استعمال کریں۔
-
-        </div>
+</div>
 
 
-        <button
-            type="button"
-            class="settings-save"
-            onclick="saveApiKey()"
-        >
+<p
+    style="
+        font-size:12px;
+        color:#475569;
+        line-height:2;
+    "
+>
 
-            <i class="fas fa-floppy-disk"></i>
+اپنی Gemini API Key درج کریں۔
 
-            محفوظ کریں
-
-        </button>
+</p>
 
 
-        <button
-            type="button"
-            class="settings-delete"
-            onclick="deleteApiKey()"
-        >
+<input
+    type="password"
+    id="userApiKeyInput"
+    class="settings-input"
+    placeholder="Gemini API Key"
+>
 
-            محفوظ API Key حذف کریں
 
-        </button>
+<div class="settings-help">
 
-    </div>
+یہ ذاتی testing کے لیے ہے۔
+
+اگر بعد میں یہ website یا app
+عام لوگوں کو دینی ہو
+تو API Key کو backend پر رکھنا بہتر ہوگا۔
+
+</div>
+
+
+<button
+    class="settings-save"
+    onclick="saveApiKey()"
+>
+
+محفوظ کریں
+
+</button>
+
+
+<button
+    class="settings-delete"
+    onclick="deleteApiKey()"
+>
+
+API Key حذف کریں
+
+</button>
+
+
+</div>
+
 
 </div>
 
 
 
-<!-- =========================================
-     HISTORY MODAL
-========================================= -->
+<!-- HISTORY -->
 
 <div
     class="modal-overlay"
     id="historyModal"
 >
 
-    <div class="modal-body">
 
-        <div class="modal-header">
-
-            <span>
-
-                <i class="fas fa-history"></i>
-
-                محفوظ تعبیرات
-
-            </span>
+<div class="modal-body">
 
 
-            <button
-                type="button"
-                class="modal-close"
-                onclick="closeHistoryModal()"
-            >
-                ✕
-            </button>
-
-        </div>
+<div class="modal-header">
 
 
-        <div id="historyList"></div>
+<span>
+
+<i class="fas fa-history"></i>
+
+محفوظ تعبیرات
+
+</span>
 
 
-        <button
-            type="button"
-            onclick="clearHistory()"
-            style="
-                width:100%;
-                margin-top:10px;
-                padding:10px;
-                border:1px solid #ef4444;
-                color:#ef4444;
-                background:#fef2f2;
-                border-radius:10px;
-                font-size:11.5px;
-                cursor:pointer;
-                font-weight:bold;
-            "
-        >
+<button
+    class="modal-close"
+    onclick="closeHistoryModal()"
+>
 
-            تمام محفوظ ہسٹری صاف کریں
+✕
 
-        </button>
+</button>
 
-    </div>
+
+</div>
+
+
+<div id="historyList"></div>
+
+
+<button
+    onclick="clearHistory()"
+    style="
+        width:100%;
+        padding:10px;
+        border:1px solid #ef4444;
+        color:#ef4444;
+        background:#fef2f2;
+        border-radius:10px;
+        cursor:pointer;
+    "
+>
+
+تمام ہسٹری صاف کریں
+
+</button>
+
+
+</div>
+
 
 </div>
 
 
 
-<!-- =========================================
-     ETIQUETTES MODAL
-========================================= -->
+<!-- ETIQUETTES -->
 
 <div
     class="modal-overlay"
     id="etiquettesModal"
 >
 
-    <div class="modal-body">
 
-        <div class="modal-header">
-
-            <span>
-
-                <i class="fas fa-book-quran"></i>
-
-                خواب کے شرعی آداب
-
-            </span>
+<div class="modal-body">
 
 
-            <button
-                type="button"
-                class="modal-close"
-                onclick="closeEtiquettesModal()"
-            >
-                ✕
-
-            </button>
-
-        </div>
+<div class="modal-header">
 
 
+<span>
 
-        <div class="etiquette-item">
+<i class="fas fa-book-quran"></i>
 
-            <strong>
-                ۱۔ اچھا خواب:
-            </strong>
+خواب کے شرعی آداب
 
-            اللہ تعالیٰ کا شکر ادا کریں۔
-            اسے کسی ایسے شخص سے بیان کیا جا سکتا ہے
-            جو خیر خواہ اور محبت کرنے والا ہو۔
+</span>
 
-        </div>
+
+<button
+    class="modal-close"
+    onclick="closeEtiquettesModal()"
+>
+
+✕
+
+</button>
+
+
+</div>
 
 
 
-        <div class="etiquette-item">
+<div class="etiquette-item">
 
-            <strong>
-                ۲۔ برا یا خوفناک خواب:
-            </strong>
+<strong>
+اچھا خواب:
+</strong>
 
-            بائیں طرف ہلکا سا تین مرتبہ تھتکاریں،
-            اللہ تعالیٰ سے اس خواب کے شر
-            اور شیطان سے پناہ مانگیں،
-            کروٹ بدلیں
-            اور اسے لوگوں سے بیان نہ کریں۔
+اللہ تعالیٰ کا شکر ادا کریں
+اور اسے کسی خیر خواہ سے
+بیان کر سکتے ہیں۔
 
-        </div>
+</div>
 
 
 
-        <div class="etiquette-item">
+<div class="etiquette-item">
 
-            <strong>
-                ۳۔ ہر خواب قابلِ تعبیر نہیں:
-            </strong>
+<strong>
+پریشان کن خواب:
+</strong>
 
-            روزمرہ خیالات،
-            پریشانی،
-            بیماری،
-            ذہنی دباؤ
-            اور انسان کی مصروفیات
-            بھی خواب پر اثرانداز ہو سکتی ہیں۔
+بائیں جانب ہلکا سا
+تین مرتبہ تھتکاریں،
+اللہ سے اس خواب کے شر
+اور شیطان سے پناہ مانگیں،
+کروٹ بدلیں
+اور اسے لوگوں سے بیان نہ کریں۔
 
-        </div>
+</div>
 
 
 
-        <div class="etiquette-item">
+<div class="etiquette-item">
 
-            <strong>
-                ۴۔ خواب شرعی حکم کا مستقل ماخذ نہیں:
-            </strong>
+<strong>
+ہر خواب قابلِ تعبیر نہیں:
+</strong>
 
-            نکاح،
-            طلاق،
-            حلال و حرام،
-            کسی شخص پر الزام
-            یا زندگی کے اہم فیصلے
-            صرف خواب کی بنیاد پر نہ کیے جائیں۔
+روزمرہ خیالات،
+ذہنی دباؤ،
+بیماری
+اور مصروفیات
+بھی خواب کو متاثر کر سکتی ہیں۔
 
-        </div>
+</div>
 
-    </div>
+
+</div>
+
 
 </div>
 
@@ -2393,16 +2462,28 @@ textarea:focus {
 
 <script>
 
+
 /* ==========================================================
-   MODEL / API CONFIG
+   CURRENT GEMINI FALLBACK MODELS
 ========================================================== */
 
-const MODEL_NAME =
-    "gemini-3.8-flash";
+
+const MODEL_LIST = [
+
+    "gemini-3.8-flash",
+
+    "gemini-3.7-flash",
+
+    "gemini-3.6-flash",
+
+    "gemini-3.5-flash-lite"
+
+];
 
 
 const API_BASE =
     "https://generativelanguage.googleapis.com/v1beta/models";
+
 
 
 let selectedSeason =
@@ -2426,45 +2507,9 @@ let isWorking =
 
 
 /* ==========================================================
-   BASIC HELPERS
-========================================================== */
-
-function escapeHtml(value) {
-
-    return String(value)
-
-        .replace(
-            /&/g,
-            "&amp;"
-        )
-
-        .replace(
-            /</g,
-            "&lt;"
-        )
-
-        .replace(
-            />/g,
-            "&gt;"
-        )
-
-        .replace(
-            /"/g,
-            "&quot;"
-        )
-
-        .replace(
-            /'/g,
-            "&#039;"
-        );
-
-}
-
-
-
-/* ==========================================================
    POLLS
 ========================================================== */
+
 
 function selectPoll(
     pollId,
@@ -2472,32 +2517,31 @@ function selectPoll(
     value
 ) {
 
-    const parent =
-        document.getElementById(
-            pollId
+
+    document
+        .querySelectorAll(
+            "#" +
+            pollId +
+            " .poll-btn"
+        )
+        .forEach(
+            button => {
+
+                button
+                    .classList
+                    .remove(
+                        "selected"
+                    );
+
+            }
         );
 
 
-    const buttons =
-        parent.querySelectorAll(
-            ".poll-btn"
+    element
+        .classList
+        .add(
+            "selected"
         );
-
-
-    buttons.forEach(
-        btn => {
-
-            btn.classList.remove(
-                "selected"
-            );
-
-        }
-    );
-
-
-    element.classList.add(
-        "selected"
-    );
 
 
     if (
@@ -2559,10 +2603,12 @@ function selectPoll(
 
 
 /* ==========================================================
-   ADVANCED DETAILS
+   ADVANCED
 ========================================================== */
 
+
 function toggleAdvancedDetails() {
+
 
     const content =
         document.getElementById(
@@ -2577,14 +2623,18 @@ function toggleAdvancedDetails() {
 
 
     const open =
-        content.classList.toggle(
-            "open"
-        );
+        content
+            .classList
+            .toggle(
+                "open"
+            );
 
 
     icon.className =
         open
+
         ? "fas fa-chevron-up"
+
         : "fas fa-chevron-down";
 
 }
@@ -2592,10 +2642,12 @@ function toggleAdvancedDetails() {
 
 
 /* ==========================================================
-   SYSTEM PROMPT
+   PROMPT
 ========================================================== */
 
+
 function buildSystemPrompt() {
+
 
 return `
 
@@ -2603,167 +2655,119 @@ return `
 کے نام سے ترتیب دیا گیا
 ایک اسلامی تحقیقی معاون ہو۔
 
-تمہارا کام صرف خواب میں موجود
-ایک یا دو الفاظ کو دیکھ کر
-الگ الگ لغوی معنی دینا نہیں۔
-
 صارف کے پورے خواب کو
 ایک مکمل واقعہ سمجھو۔
 
-خواب میں موجود:
+صرف ایک لفظ
+یا ایک علامت دیکھ کر
+فوری قطعی نتیجہ نہ نکالو۔
 
+خواب میں موجود
 اشخاص،
 رشتے،
+گفتگو،
 جگہ،
 وقت،
-گفتگو،
-اعمال،
-رنگ،
-جانور،
-سفر،
-خوف،
-خوشی،
-پریشانی،
-اور دوسری اہم علامات
-
+احساسات،
+اعمال
+اور اہم علامات
 کو باہم ملا کر
-مجموعی سیاق میں
-ممکنہ تعبیر پیش کرو۔
+مجموعی ممکنہ تعبیر پیش کرو۔
 
-================================
+مصادر میں ترجیح:
 
-مصادر کی ترجیح:
+قرآن مجید،
 
-1. قرآن مجید میں موجود رؤیا سے متعلق واقعات۔
+صحیح احادیثِ رؤیا،
 
-2. صحیح بخاری،
-صحیح مسلم
-اور دوسری معتبر احادیثِ رؤیا۔
+صحابہ و تابعین سے
+معتبر منقولات،
 
-3. صحابہ اور تابعین سے
-معتبر منقولات۔
+امام محمد بن سیرین رحمہ اللہ
+سے معتبر منقول تعبیرات،
 
-4. امام محمد بن سیرین رحمہ اللہ
-سے معتبر طور پر منقول تعبیرات۔
+امام عبدالغنی نابلسی رحمہ اللہ
+کی
+تعطير الأنام في تعبير المنام،
 
-5. ابن سیرین رحمہ اللہ
-کی طرف منسوب کتابوں کے بارے میں
-نسبت یقینی نہ ہو
-تو اسے قطعی طور پر
-ابن سیرین کا قول نہ کہو۔
+ابن شاہین رحمہ اللہ کی
+الإشارات في علم العبارات،
 
-ایسی صورت میں کہو:
+اور معتبر اہلِ سنت
+دارالافتاء کے
+شائع شدہ جوابات۔
 
-"ابن سیرینؒ سے منسوب کتبِ تعبیر میں..."
-
-6. امام عبدالغنی نابلسی رحمہ اللہ
-کی کتاب:
-
-تعطير الأنام في تعبير المنام
-
-7. ابن شاہین رحمہ اللہ کی کتاب:
-
-الإشارات في علم العبارات
-
-8. معتبر اہلِ سنت دارالافتاء
-کے شائع شدہ جوابات،
 خصوصاً:
 
 دارالافتاء دارالعلوم دیوبند،
 
 جامعہ علوم اسلامیہ
-علامہ محمد یوسف بنوری ٹاؤن،
+بنوری ٹاؤن،
 
-جامعہ فاروقیہ کراچی،
-
-اور دیگر معروف
-معتبر دارالافتاء۔
+جامعہ فاروقیہ کراچی۔
 
 اگر ویب سرچ دستیاب ہو
-تو صارف کے خواب سے
-عین یا قریب ترین
-معتبر شائع شدہ جواب
-تلاش کرنے کی کوشش کرو۔
+تو قریب ترین معتبر
+شائع شدہ جواب تلاش کر سکتے ہو۔
 
-کسی ادارے،
+کبھی جعلی
+حدیث،
+فتویٰ،
 کتاب،
-عالم،
-فتویٰ
-یا حدیث کی طرف
-کوئی ایسا قول
-منسوب نہ کرو
-جس کی تصدیق نہ ہو۔
+صفحہ نمبر،
+حوالہ
+یا URL
+مت بناؤ۔
 
-جعلی فتویٰ نمبر،
-جعلی صفحہ،
-جعلی حدیث،
-جعلی حوالہ
-یا جعلی URL
-ہرگز نہ بناؤ۔
+اگر ابن سیرین رحمہ اللہ
+کی طرف نسبت ثابت نہ ہو
+تو کہو:
 
-================================
-
-خوابوں کی اقسام:
+"ابن سیرینؒ سے منسوب کتبِ تعبیر میں..."
 
 ہر خواب لازماً
-تعبیر کے قابل نہیں۔
+قابلِ تعبیر نہیں۔
 
-نیک رؤیا،
-پریشان کن خواب
-اور حدیثُ النفس
-کے فرق کو
+حدیث النفس
+اور پریشان کن خواب
+کے امکان کو بھی
 ملحوظ رکھو۔
 
-اگر خواب
-روزمرہ فکر،
-بیماری،
-شدید پریشانی،
-کام،
-کسی ویڈیو،
-واقعے
-یا مسلسل ذہنی سوچ
-سے متاثر معلوم ہو
-تو حدیثُ النفس
-کا امکان بیان کیا جا سکتا ہے۔
+صرف خواب کی بنیاد پر:
 
-================================
+کسی شخص کی موت،
 
-قطعی پیش گوئی ممنوع ہے۔
+عضو کٹنے،
 
-صرف خواب کی بنیاد پر
-یہ مت کہو:
+طلاق،
 
-"ضرور ایسا ہوگا"
+شادی،
 
-"یقیناً یہ واقعہ پیش آئے گا"
+حمل،
 
-"فلاں شخص مر جائے گا"
+جادو،
 
-"اس شخص کا عضو کٹ جائے گا"
+جن،
 
-"فلاں شخص نے جادو کیا ہے"
+دشمنی،
 
-"فلاں شخص دشمن ہے"
+مالی نقصان
 
-"ضرور طلاق ہوگی"
+یا کسی دوسرے
+مستقبل کے واقعے کو
+یقینی قرار نہ دو۔
 
-"ضرور شادی ہوگی"
+ممکنہ انداز اختیار کرو۔
 
-"ضرور مالی نقصان ہوگا"
+مثلاً:
 
-وغیرہ۔
+"اس خواب کی ممکنہ تعبیر..."
 
-اس کے بجائے کہیں:
+"بظاہر یہ علامت..."
 
-"ممکنہ تعبیر یہ ہو سکتی ہے..."
+"یہ کیفیت ... کی طرف اشارہ کر سکتی ہے..."
 
-"یہ علامت بظاہر ... کی طرف اشارہ کر سکتی ہے..."
-
-"اہلِ تعبیر کے اصولوں کی روشنی میں..."
-
-================================
-
-صارف کی فراہم کردہ اضافی معلومات:
+صارف کی اضافی معلومات:
 
 موسم:
 ${selectedSeason}
@@ -2771,65 +2775,40 @@ ${selectedSeason}
 مقام:
 ${selectedLocation}
 
-خواب دیکھنے کا وقت:
+وقت:
 ${selectedTime}
 
-خواب دیکھنے والے کی حالت:
+حالت:
 ${selectedStatus}
 
-بیدار ہونے کے بعد کیفیت:
+بیدار ہونے پر کیفیت:
 ${selectedEmotion}
 
-ان معلومات کو صرف
-اسی حد تک استعمال کرو
-جس حد تک وہ
-حقیقتاً تعبیر میں مفید ہوں۔
+ان معلومات کو
+صرف اسی حد تک استعمال کرو
+جہاں واقعی مفید ہوں۔
 
-ان معلومات کی بنیاد پر
-اپنی طرف سے غیر ثابت
-اصول ایجاد نہ کرو۔
-
-================================
-
-جواب کا انداز:
-
-سب سے پہلے لکھو:
+جواب کے آغاز میں لکھو:
 
 تعبیرُ الرؤیا — حذیفہ سعید
 
-پھر بلا ضرورت
-Step 1،
-Step 2
-یا لمبی headings نہ بناؤ۔
-
-سادہ،
+پھر سادہ،
 باوقار،
 مربوط
 اور عام فہم اردو میں
-خواب کی ممکنہ تعبیر بیان کرو۔
+ممکنہ تعبیر دو۔
 
-ضرورت ہو
-تو 2 سے 5 مختصر پیراگراف لکھو۔
+بلا ضرورت
+Step 1،
+Step 2
+وغیرہ استعمال نہ کرو۔
 
-اگر کوئی معتبر خاص حوالہ
-واقعی دستیاب ہو
-تو مختصر طور پر
-اس کا ذکر کیا جا سکتا ہے۔
-
-اگر معتبر بنیاد واضح نہ ہو
+اگر معتبر بنیاد نہ ملے
 تو صاف کہو:
 
-"اس خواب کی کوئی واضح اور قطعی تعبیر
+"اس خواب کی واضح اور قطعی تعبیر
 معتبر مصادر سے متعین نہیں ہوتی،
-اس لیے اس کے بارے میں یقینی بات کہنا مناسب نہیں۔"
-
-خوفناک خواب ہو
-تو مناسب مسنون رہنمائی
-مختصر طور پر بیان کرو۔
-
-صدقہ کو
-ہر خواب کا لازمی یا
-یقینی علاج نہ کہو۔
+اس لیے یقینی بات کہنا مناسب نہیں۔"
 
 جواب کے آخر میں
 لازماً الگ سطر میں لکھو:
@@ -2843,77 +2822,529 @@ Step 2
 
 
 /* ==========================================================
-   API REQUEST
+   WAIT
 ========================================================== */
 
-async function makeGeminiRequest(
-    apiKey,
-    payload,
-    useSearch
+
+function wait(
+    milliseconds
 ) {
 
-    const apiUrl =
-        `${API_BASE}/${encodeURIComponent(MODEL_NAME)}:generateContent`;
+
+    return new Promise(
+        resolve => {
+
+            setTimeout(
+                resolve,
+                milliseconds
+            );
+
+        }
+    );
+
+}
 
 
-    const body =
-        JSON.parse(
-            JSON.stringify(payload)
+
+/* ==========================================================
+   FETCH WITH TIMEOUT
+========================================================== */
+
+
+async function fetchWithTimeout(
+    url,
+    options,
+    timeoutMs = 45000
+) {
+
+
+    const controller =
+        new AbortController();
+
+
+    const timeout =
+        setTimeout(
+            () => {
+
+                controller.abort();
+
+            },
+            timeoutMs
         );
 
 
-    if (useSearch) {
+    try {
 
-        body.tools = [
+
+        return await fetch(
+            url,
             {
-                google_search: {}
+                ...options,
+
+                signal:
+                    controller.signal
             }
+        );
+
+
+    }
+
+    finally {
+
+
+        clearTimeout(
+            timeout
+        );
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   MULTI MODEL FALLBACK
+========================================================== */
+
+
+async function makeGeminiRequest(
+    apiKey,
+    payload
+) {
+
+
+    let lastError =
+        "کوئی جواب دستیاب نہیں ہوا۔";
+
+
+    const progress =
+        document.getElementById(
+            "modelProgress"
+        );
+
+
+    /*
+      ہر model کو باری باری آزمایا جائے گا۔
+    */
+
+
+    for (
+        let modelIndex = 0;
+        modelIndex < MODEL_LIST.length;
+        modelIndex++
+    ) {
+
+
+        const modelName =
+            MODEL_LIST[
+                modelIndex
+            ];
+
+
+        progress.textContent =
+            `ماڈل ${modelIndex + 1}/${MODEL_LIST.length} سے رابطہ کیا جا رہا ہے...`;
+
+
+        /*
+          پہلے Search Grounding کے ساتھ،
+          پھر ضرورت پڑنے پر بغیر Search کے۔
+        */
+
+
+        const searchModes = [
+
+            true,
+
+            false
+
         ];
+
+
+        for (
+            const useSearch
+            of searchModes
+        ) {
+
+
+            /*
+              Temporary load ہونے پر
+              اسی model کو دو مرتبہ try کریں۔
+            */
+
+
+            for (
+                let attempt = 1;
+                attempt <= 2;
+                attempt++
+            ) {
+
+
+                const apiUrl =
+                    `${API_BASE}/${encodeURIComponent(modelName)}:generateContent`;
+
+
+                const body =
+                    JSON.parse(
+                        JSON.stringify(
+                            payload
+                        )
+                    );
+
+
+                if (
+                    useSearch
+                ) {
+
+
+                    body.tools = [
+
+                        {
+
+                            google_search: {}
+
+                        }
+
+                    ];
+
+                }
+
+
+                try {
+
+
+                    const response =
+                        await fetchWithTimeout(
+                            apiUrl,
+                            {
+
+                                method:
+                                    "POST",
+
+                                headers: {
+
+                                    "Content-Type":
+                                        "application/json",
+
+                                    "x-goog-api-key":
+                                        apiKey
+
+                                },
+
+                                body:
+                                    JSON.stringify(
+                                        body
+                                    )
+
+                            }
+                        );
+
+
+                    let data = {};
+
+
+                    try {
+
+
+                        data =
+                            await response
+                                .json();
+
+
+                    }
+
+                    catch {
+
+
+                        data = {};
+
+                    }
+
+
+                    /*
+                      SUCCESS
+                    */
+
+
+                    if (
+                        response.ok
+                    ) {
+
+
+                        console.log(
+                            "Gemini model used:",
+                            modelName,
+                            "Search:",
+                            useSearch
+                        );
+
+
+                        progress.textContent =
+                            "جواب موصول ہو گیا۔";
+
+
+                        return {
+
+                            ok:
+                                true,
+
+                            data:
+                                data,
+
+                            model:
+                                modelName
+
+                        };
+
+                    }
+
+
+                    const message =
+                        data
+                            ?.error
+                            ?.message
+
+                        ||
+
+                        `HTTP ${response.status}`;
+
+
+                    lastError =
+                        message;
+
+
+                    const lower =
+                        message
+                            .toLowerCase();
+
+
+                    /*
+                      API KEY / PERMISSION ERROR
+
+                      Model بدلنے کا فائدہ نہیں۔
+                    */
+
+
+                    if (
+
+                        response.status === 401
+
+                        ||
+
+                        response.status === 403
+
+                    ) {
+
+
+                        return {
+
+                            ok:
+                                false,
+
+                            data: {
+
+                                error: {
+
+                                    message:
+                                        message
+
+                                }
+
+                            }
+
+                        };
+
+                    }
+
+
+                    /*
+                      Search grounding unsupported ہو
+                      تو بغیر Search کے
+                      اسی model کو try کریں۔
+                    */
+
+
+                    if (
+
+                        useSearch
+
+                        &&
+
+                        (
+
+                            response.status === 400
+
+                            ||
+
+                            lower.includes(
+                                "tool"
+                            )
+
+                            ||
+
+                            lower.includes(
+                                "google_search"
+                            )
+
+                        )
+
+                    ) {
+
+
+                        break;
+
+                    }
+
+
+                    /*
+                      High Demand / Rate Limit / Server Busy
+                    */
+
+
+                    const temporaryError =
+
+                        response.status === 429
+
+                        ||
+
+                        response.status === 500
+
+                        ||
+
+                        response.status === 502
+
+                        ||
+
+                        response.status === 503
+
+                        ||
+
+                        response.status === 504
+
+                        ||
+
+                        lower.includes(
+                            "high demand"
+                        )
+
+                        ||
+
+                        lower.includes(
+                            "overloaded"
+                        )
+
+                        ||
+
+                        lower.includes(
+                            "temporarily unavailable"
+                        );
+
+
+                    if (
+                        temporaryError
+                    ) {
+
+
+                        progress.textContent =
+                            `${modelName} مصروف ہے، دوبارہ کوشش کی جا رہی ہے...`;
+
+
+                        await wait(
+                            attempt * 1800
+                        );
+
+
+                        continue;
+
+                    }
+
+
+                    /*
+                      Model unavailable/not found:
+                      اگلے model پر جائیں۔
+                    */
+
+
+                    if (
+
+                        response.status === 404
+
+                        ||
+
+                        lower.includes(
+                            "not found"
+                        )
+
+                    ) {
+
+
+                        break;
+
+                    }
+
+
+                    /*
+                      دوسری مستقل error
+                    */
+
+
+                    break;
+
+
+                }
+
+                catch (
+                    error
+                ) {
+
+
+                    lastError =
+                        error.name ===
+                        "AbortError"
+
+                        ? "API request timeout"
+
+                        : error.message;
+
+
+                    console.warn(
+                        modelName,
+                        lastError
+                    );
+
+
+                    await wait(
+                        attempt * 1500
+                    );
+
+                }
+
+            }
+
+        }
 
     }
 
 
-    const response =
-        await fetch(
-            apiUrl,
-            {
-
-                method:
-                    "POST",
-
-                headers: {
-
-                    "Content-Type":
-                        "application/json",
-
-                    "x-goog-api-key":
-                        apiKey
-
-                },
-
-                body:
-                    JSON.stringify(
-                        body
-                    )
-
-            }
-        );
-
-
-    const data =
-        await response.json();
+    /*
+      سب models ناکام
+    */
 
 
     return {
 
         ok:
-            response.ok,
+            false,
 
-        status:
-            response.status,
+        data: {
 
-        data:
-            data
+            error: {
+
+                message:
+                    lastError
+
+            }
+
+        }
 
     };
 
@@ -2922,19 +3353,29 @@ async function makeGeminiRequest(
 
 
 /* ==========================================================
-   GET RESPONSE TEXT
+   EXTRACT RESPONSE TEXT
 ========================================================== */
 
-function getResponseText(data) {
+
+function getResponseText(
+    data
+) {
+
 
     const parts =
-        data?.candidates?.[0]
-            ?.content?.parts;
+        data
+            ?.candidates
+            ?.[0]
+            ?.content
+            ?.parts;
 
 
     if (
-        !Array.isArray(parts)
+        !Array.isArray(
+            parts
+        )
     ) {
+
 
         return "";
 
@@ -2944,8 +3385,15 @@ function getResponseText(data) {
     return parts
 
         .map(
-            part =>
-                part.text || ""
+            part => {
+
+                return (
+                    part.text
+                    ||
+                    ""
+                );
+
+            }
         )
 
         .join("")
@@ -2957,12 +3405,17 @@ function getResponseText(data) {
 
 
 /* ==========================================================
-   FETCH INTERPRETATION
+   INTERPRET
 ========================================================== */
+
 
 async function fetchInterpretation() {
 
-    if (isWorking) {
+
+    if (
+        isWorking
+    ) {
+
 
         return;
 
@@ -2976,6 +3429,51 @@ async function fetchInterpretation() {
             )
             .value
             .trim();
+
+
+    if (
+        !input
+    ) {
+
+
+        alert(
+            "براہِ کرم پہلے اپنا خواب لکھیں۔"
+        );
+
+
+        return;
+
+    }
+
+
+    const apiKey =
+        (
+            localStorage
+                .getItem(
+                    "userGeminiKey"
+                )
+            ||
+            ""
+        )
+        .trim();
+
+
+    if (
+        !apiKey
+    ) {
+
+
+        openSettingsModal();
+
+
+        alert(
+            "پہلے سیٹنگز میں اپنی Gemini API Key محفوظ کریں۔"
+        );
+
+
+        return;
+
+    }
 
 
     const loader =
@@ -3002,43 +3500,6 @@ async function fetchInterpretation() {
         );
 
 
-    if (!input) {
-
-        alert(
-            "براہِ کرم پہلے اپنا خواب تحریر کریں۔"
-        );
-
-        return;
-
-    }
-
-
-    const savedKey =
-        (
-            localStorage
-                .getItem(
-                    "userGeminiKey"
-                )
-            ||
-            ""
-        )
-        .trim();
-
-
-    if (!savedKey) {
-
-        openSettingsModal();
-
-
-        alert(
-            "پہلے سیٹنگز میں اپنی Gemini API Key محفوظ کریں۔"
-        );
-
-        return;
-
-    }
-
-
     isWorking =
         true;
 
@@ -3055,25 +3516,38 @@ async function fetchInterpretation() {
         "none";
 
 
+    document.getElementById(
+        "modelProgress"
+    ).textContent =
+        "بہترین دستیاب Gemini model تلاش کیا جا رہا ہے...";
+
+
     loader.scrollIntoView({
+
         behavior:
             "smooth",
 
         block:
             "center"
+
     });
 
 
 
     const payload = {
 
+
         systemInstruction: {
 
             parts: [
+
                 {
+
                     text:
                         buildSystemPrompt()
+
                 }
+
             ]
 
         },
@@ -3095,8 +3569,7 @@ async function fetchInterpretation() {
 
 ${input}
 
-اس خواب کو پورے سیاق کے ساتھ سمجھ کر
-محتاط ممکنہ تعبیر بیان کریں۔`
+براہِ کرم پورے خواب کو مجموعی سیاق میں سمجھیں اور معتبر اصولوں کی روشنی میں محتاط ممکنہ تعبیر بیان کریں۔`
 
                     }
 
@@ -3123,52 +3596,33 @@ ${input}
     };
 
 
+
     try {
 
 
-        /*
-        پہلے Google Search grounding
-        کے ساتھ کوشش کی جائے گی۔
-        اگر متعلقہ API/project پر
-        یہ tool دستیاب نہ ہو
-        تو خودکار طور پر
-        search کے بغیر دوبارہ کوشش ہوگی۔
-        */
-
-
-        let apiResult =
+        const apiResult =
             await makeGeminiRequest(
-                savedKey,
-                payload,
-                true
+                apiKey,
+                payload
             );
 
 
-        if (!apiResult.ok) {
-
-            apiResult =
-                await makeGeminiRequest(
-                    savedKey,
-                    payload,
-                    false
-                );
-
-        }
+        if (
+            !apiResult.ok
+        ) {
 
 
-        if (!apiResult.ok) {
+            throw new Error(
 
-            const message =
                 apiResult
                     .data
                     ?.error
                     ?.message
+
                 ||
-                "نامعلوم API خرابی";
 
+                "تمام دستیاب models سے رابطہ نہیں ہو سکا۔"
 
-            throw new Error(
-                message
             );
 
         }
@@ -3180,10 +3634,13 @@ ${input}
             );
 
 
-        if (!textOutput) {
+        if (
+            !textOutput
+        ) {
+
 
             throw new Error(
-                "جواب موصول نہیں ہوا۔"
+                "AI نے خالی جواب دیا۔"
             );
 
         }
@@ -3204,17 +3661,21 @@ ${input}
 
 
         resultCard.scrollIntoView({
+
             behavior:
                 "smooth",
 
             block:
                 "start"
+
         });
 
 
     }
 
-    catch (error) {
+    catch (
+        error
+    ) {
 
 
         console.error(
@@ -3223,12 +3684,15 @@ ${input}
 
 
         alert(
+
 `تعبیر حاصل نہیں ہو سکی۔
 
 API کا پیغام:
+
 ${error.message}
 
-اپنی API Key، انٹرنیٹ کنکشن اور API access چیک کریں۔`
+اگر Google کے models عارضی طور پر مصروف ہوں تو چند لمحوں بعد دوبارہ کوشش کریں۔`
+
         );
 
 
@@ -3258,10 +3722,12 @@ ${error.message}
    HISTORY
 ========================================================== */
 
+
 function saveToHistory(
     dream,
     result
 ) {
+
 
     let history =
         JSON.parse(
@@ -3299,10 +3765,13 @@ function saveToHistory(
 
 
     localStorage.setItem(
+
         "dreamHistory",
+
         JSON.stringify(
             history
         )
+
     );
 
 }
@@ -3313,7 +3782,9 @@ function saveToHistory(
    HISTORY MODAL
 ========================================================== */
 
+
 function openHistoryModal() {
+
 
     const modal =
         document.getElementById(
@@ -3342,17 +3813,24 @@ function openHistoryModal() {
         history.length === 0
     ) {
 
-        list.innerHTML =
-`<p
+
+        list.innerHTML = `
+
+<p
     style="
         text-align:center;
-        color:#888;
-        font-size:12px;
+        color:#64748b;
         padding:20px;
+        font-size:12px;
     "
 >
-    ابھی تک کوئی تعبیر محفوظ نہیں ہے۔
-</p>`;
+
+ابھی کوئی تعبیر محفوظ نہیں۔
+
+</p>
+
+`;
+
 
     }
 
@@ -3362,69 +3840,67 @@ function openHistoryModal() {
         list.innerHTML =
             history
 
-                .map(
-                    (
-                        item,
-                        index
-                    ) => {
+            .map(
+                (
+                    item,
+                    index
+                ) => {
 
-return `
+
+                    return `
 
 <div class="history-item">
 
-    <strong
-        style="
-            color:var(--primary-emerald);
-        "
-    >
+<strong
+    style="
+        color:#064e3b;
+    "
+>
 
-        خواب #${history.length - index}
+خواب #${history.length - index}
 
-        — ${escapeHtml(item.date)}
+—
 
-    </strong>
+${escapeHtml(item.date)}
 
-
-    <p
-        style="
-            color:#475569;
-            margin-top:6px;
-        "
-    >
-
-        <strong>
-            خواب:
-        </strong>
-
-        ${escapeHtml(item.dream)}
-
-    </p>
+</strong>
 
 
-    <p
-        style="
-            color:#0f172a;
-            margin-top:7px;
-            white-space:pre-wrap;
-        "
-    >
+<p style="margin-top:6px;">
 
-        <strong>
-            تعبیر:
-        </strong>
+<strong>
+خواب:
+</strong>
 
-        ${escapeHtml(item.result)}
+${escapeHtml(item.dream)}
 
-    </p>
+</p>
+
+
+<p
+    style="
+        margin-top:7px;
+        white-space:pre-wrap;
+    "
+>
+
+<strong>
+تعبیر:
+</strong>
+
+${escapeHtml(item.result)}
+
+</p>
 
 </div>
 
 `;
 
-                    }
-                )
 
-                .join("");
+                }
+            )
+
+            .join("");
 
     }
 
@@ -3438,12 +3914,10 @@ return `
 
 function closeHistoryModal() {
 
-    document
-        .getElementById(
-            "historyModal"
-        )
-        .style
-        .display =
+
+    document.getElementById(
+        "historyModal"
+    ).style.display =
         "none";
 
 }
@@ -3452,13 +3926,13 @@ function closeHistoryModal() {
 
 function clearHistory() {
 
-    const yes =
-        confirm(
-            "کیا آپ واقعی تمام محفوظ تعبیرات ختم کرنا چاہتے ہیں؟"
-        );
 
+    if (
+        !confirm(
+            "کیا تمام محفوظ تعبیرات حذف کر دی جائیں؟"
+        )
+    ) {
 
-    if (!yes) {
 
         return;
 
@@ -3480,27 +3954,26 @@ function clearHistory() {
    SETTINGS
 ========================================================== */
 
+
 function openSettingsModal() {
 
-    document
-        .getElementById(
-            "settingsModal"
-        )
-        .style
-        .display =
+
+    document.getElementById(
+        "settingsModal"
+    ).style.display =
         "flex";
 
 
-    document
-        .getElementById(
-            "userApiKeyInput"
+    document.getElementById(
+        "userApiKeyInput"
+    ).value =
+
+        localStorage.getItem(
+            "userGeminiKey"
         )
-        .value =
-        localStorage
-            .getItem(
-                "userGeminiKey"
-            )
+
         ||
+
         "";
 
 }
@@ -3509,12 +3982,10 @@ function openSettingsModal() {
 
 function closeSettingsModal() {
 
-    document
-        .getElementById(
-            "settingsModal"
-        )
-        .style
-        .display =
+
+    document.getElementById(
+        "settingsModal"
+    ).style.display =
         "none";
 
 }
@@ -3523,20 +3994,22 @@ function closeSettingsModal() {
 
 function saveApiKey() {
 
-    const val =
-        document
-            .getElementById(
-                "userApiKeyInput"
-            )
-            .value
-            .trim();
+
+    const value =
+        document.getElementById(
+            "userApiKeyInput"
+        ).value.trim();
 
 
-    if (!val) {
+    if (
+        !value
+    ) {
+
 
         alert(
-            "براہِ کرم API Key درج کریں۔"
+            "API Key درج کریں۔"
         );
+
 
         return;
 
@@ -3545,16 +4018,16 @@ function saveApiKey() {
 
     localStorage.setItem(
         "userGeminiKey",
-        val
+        value
     );
+
+
+    closeSettingsModal();
 
 
     alert(
         "API Key محفوظ ہو گئی ہے۔"
     );
-
-
-    closeSettingsModal();
 
 }
 
@@ -3562,21 +4035,20 @@ function saveApiKey() {
 
 function deleteApiKey() {
 
+
     localStorage.removeItem(
         "userGeminiKey"
     );
 
 
-    document
-        .getElementById(
-            "userApiKeyInput"
-        )
-        .value =
+    document.getElementById(
+        "userApiKeyInput"
+    ).value =
         "";
 
 
     alert(
-        "محفوظ API Key حذف کر دی گئی ہے۔"
+        "API Key حذف ہو گئی ہے۔"
     );
 
 }
@@ -3587,14 +4059,13 @@ function deleteApiKey() {
    ETIQUETTES
 ========================================================== */
 
+
 function openEtiquettesModal() {
 
-    document
-        .getElementById(
-            "etiquettesModal"
-        )
-        .style
-        .display =
+
+    document.getElementById(
+        "etiquettesModal"
+    ).style.display =
         "flex";
 
 }
@@ -3603,12 +4074,10 @@ function openEtiquettesModal() {
 
 function closeEtiquettesModal() {
 
-    document
-        .getElementById(
-            "etiquettesModal"
-        )
-        .style
-        .display =
+
+    document.getElementById(
+        "etiquettesModal"
+    ).style.display =
         "none";
 
 }
@@ -3616,21 +4085,23 @@ function closeEtiquettesModal() {
 
 
 /* ==========================================================
-   COPY RESULT
+   COPY
 ========================================================== */
+
 
 async function copyResult() {
 
-    const resultText =
-        document
-            .getElementById(
-                "resultText"
-            )
-            .innerText
-            .trim();
+
+    const text =
+        document.getElementById(
+            "resultText"
+        ).innerText.trim();
 
 
-    if (!resultText) {
+    if (
+        !text
+    ) {
+
 
         return;
 
@@ -3643,7 +4114,7 @@ async function copyResult() {
         await navigator
             .clipboard
             .writeText(
-                resultText
+                text
             );
 
 
@@ -3654,26 +4125,26 @@ async function copyResult() {
 
     }
 
-    catch (error) {
+    catch {
 
 
-        const area =
+        const temp =
             document.createElement(
                 "textarea"
             );
 
 
-        area.value =
-            resultText;
+        temp.value =
+            text;
 
 
         document.body
             .appendChild(
-                area
+                temp
             );
 
 
-        area.select();
+        temp.select();
 
 
         document.execCommand(
@@ -3681,7 +4152,7 @@ async function copyResult() {
         );
 
 
-        area.remove();
+        temp.remove();
 
 
         alert(
@@ -3695,46 +4166,48 @@ async function copyResult() {
 
 
 /* ==========================================================
-   WHATSAPP SHARE
+   WHATSAPP
 ========================================================== */
+
 
 function shareWhatsApp() {
 
-    const resultText =
-        document
-            .getElementById(
-                "resultText"
-            )
-            .innerText
-            .trim();
+
+    const result =
+        document.getElementById(
+            "resultText"
+        ).innerText.trim();
 
 
-    if (!resultText) {
+    if (
+        !result
+    ) {
+
 
         return;
 
     }
 
 
-    const textToShare =
+    const message =
         encodeURIComponent(
 
 `تعبیر الرؤیا
 پیشکش: حذیفہ سعید
 
-${resultText}`
+${result}`
 
         );
 
 
-    const url =
-        `https://api.whatsapp.com/send?text=${textToShare}`;
-
-
     window.open(
-        url,
+
+        `https://api.whatsapp.com/send?text=${message}`,
+
         "_blank",
+
         "noopener"
+
     );
 
 }
@@ -3742,8 +4215,52 @@ ${resultText}`
 
 
 /* ==========================================================
-   CLOSE MODALS BY BACKDROP TAP
+   ESCAPE
 ========================================================== */
+
+
+function escapeHtml(
+    value
+) {
+
+
+    return String(
+        value
+    )
+
+    .replace(
+        /&/g,
+        "&amp;"
+    )
+
+    .replace(
+        /</g,
+        "&lt;"
+    )
+
+    .replace(
+        />/g,
+        "&gt;"
+    )
+
+    .replace(
+        /"/g,
+        "&quot;"
+    )
+
+    .replace(
+        /'/g,
+        "&#039;"
+    );
+
+}
+
+
+
+/* ==========================================================
+   BACKDROP CLOSE
+========================================================== */
+
 
 [
     "settingsModal",
@@ -3753,6 +4270,7 @@ ${resultText}`
 
 .forEach(
     id => {
+
 
         const modal =
             document.getElementById(
@@ -3764,10 +4282,12 @@ ${resultText}`
             "click",
             event => {
 
+
                 if (
                     event.target ===
                     modal
                 ) {
+
 
                     modal.style.display =
                         "none";
@@ -3780,8 +4300,10 @@ ${resultText}`
     }
 );
 
+
 </script>
 
 
 </body>
+
   </html>
