@@ -1051,9 +1051,12 @@ id="loader"
 
 </div>
 
-<div class="loader-sub">
+<div
+class="loader-sub"
+id="modelProgress"
+>
 
-3.1 Flash-Lite سے براہِ راست جواب لیا جا رہا ہے
+Gemini 3.1 Flash-Lite سے رابطہ کیا جا رہا ہے...
 
 </div>
 
@@ -1297,29 +1300,31 @@ onclick="closeEtiquettes()"
 
 <script>
 
+/* =========================
+   GEMINI CONFIG
+========================= */
+
 /*
-=========================================================
-FRONTEND
-=========================================================
-
-یہ HTML API key نہیں مانگتا۔
-
-یہ backend endpoint استعمال کرتا ہے:
-
-/api/dream
-
-Backend میں model ترتیب یہ رکھیں:
-
-1. gemini-3.1-flash-lite
-2. gemini-3.5-flash-lite
-3. gemini-3.6-flash
-
-Automatic Google Search بند رکھیں۔
-
-=========================================================
+آپ کی API Key یہاں پہلے سے شامل ہے۔
 */
 
-const API_URL = "/api/dream";
+const GEMINI_API_KEY =
+"AQ.Ab8RN6LVTElS9u0tmIA7cW-YJaXRq9ezdA9LhSIvJ2aCS5rD1w";
+
+
+const MODEL_LIST = [
+
+"gemini-3.1-flash-lite",
+
+"gemini-3.5-flash-lite",
+
+"gemini-3.6-flash"
+
+];
+
+
+const API_BASE =
+"https://generativelanguage.googleapis.com/v1beta/models";
 
 
 let selectedSeason =
@@ -1340,6 +1345,10 @@ let selectedEmotion =
 let isWorking =
 false;
 
+
+/* =========================
+   POLLS
+========================= */
 
 function selectPoll(
 pollId,
@@ -1401,6 +1410,10 @@ selectedEmotion = value;
 }
 
 
+/* =========================
+   ADVANCED
+========================= */
+
 function toggleAdvanced(){
 
 document
@@ -1414,6 +1427,515 @@ document
 
 }
 
+
+/* =========================
+   SYSTEM PROMPT
+========================= */
+
+function buildSystemPrompt(){
+
+return `
+
+تم "تعبیرُ الرؤیا — حذیفہ سعید"
+کے نام سے ترتیب دیا گیا
+ایک اسلامی تحقیقی معاون ہو۔
+
+صارف کے پورے خواب کو
+ایک مکمل واقعہ سمجھو۔
+
+صرف ایک لفظ
+یا ایک علامت دیکھ کر
+قطعی نتیجہ نہ نکالو۔
+
+خواب میں موجود:
+
+اشخاص،
+رشتے،
+جگہ،
+وقت،
+گفتگو،
+اعمال،
+احساسات،
+خوف،
+خوشی،
+سفر،
+رنگ،
+جانور
+اور دوسری اہم علامات
+
+کو باہم ملا کر
+مجموعی سیاق میں
+ممکنہ تعبیر پیش کرو۔
+
+مصادر میں ترجیح:
+
+1. قرآن مجید میں رؤیا سے متعلق واقعات۔
+
+2. صحیح بخاری،
+صحیح مسلم
+اور دوسری معتبر احادیثِ رؤیا۔
+
+3. صحابہ اور تابعین
+سے معتبر منقولات۔
+
+4. امام محمد بن سیرین رحمہ اللہ
+سے معتبر طور پر منقول تعبیرات۔
+
+5. اگر ابن سیرین رحمہ اللہ
+کی طرف کسی کتاب یا قول کی نسبت
+یقینی نہ ہو
+تو اسے قطعی طور پر
+ابن سیرین کا قول نہ کہو۔
+
+ایسی صورت میں کہو:
+
+"ابن سیرینؒ سے منسوب کتبِ تعبیر میں..."
+
+6. امام عبدالغنی نابلسی رحمہ اللہ کی کتاب:
+
+تعطير الأنام في تعبير المنام
+
+7. ابن شاہین رحمہ اللہ کی کتاب:
+
+الإشارات في علم العبارات
+
+8. معتبر اہلِ سنت
+دارالافتاء کے
+شائع شدہ جوابات۔
+
+خصوصاً:
+
+دارالافتاء دارالعلوم دیوبند،
+
+جامعہ علوم اسلامیہ
+علامہ محمد یوسف بنوری ٹاؤن،
+
+جامعہ فاروقیہ کراچی۔
+
+جعلی حدیث،
+جعلی فتویٰ،
+جعلی حوالہ،
+جعلی صفحہ نمبر
+یا جعلی URL
+ہرگز نہ بناؤ۔
+
+ہر خواب لازماً
+تعبیر کے قابل نہیں ہوتا۔
+
+نیک رؤیا،
+پریشان کن خواب
+اور حدیثُ النفس
+کے فرق کو ملحوظ رکھو۔
+
+اگر خواب روزمرہ سوچ،
+پریشانی،
+بیماری،
+کام،
+کسی واقعے،
+ویڈیو
+یا مسلسل ذہنی سوچ
+سے متاثر معلوم ہو
+تو حدیثُ النفس
+کا امکان بیان کیا جا سکتا ہے۔
+
+صرف خواب کی بنیاد پر
+قطعی طور پر یہ نہ کہو:
+
+فلاں شخص ضرور مر جائے گا۔
+
+ضرور شادی ہوگی۔
+
+ضرور طلاق ہوگی۔
+
+فلاں شخص نے جادو کیا ہے۔
+
+فلاں شخص دشمن ہے۔
+
+ضرور مالی نقصان ہوگا۔
+
+ضرور کوئی حادثہ ہوگا۔
+
+اس کے بجائے
+محتاط زبان استعمال کرو۔
+
+مثلاً:
+
+"ممکنہ تعبیر یہ ہو سکتی ہے..."
+
+"بظاہر یہ علامت ... کی طرف اشارہ کر سکتی ہے..."
+
+"اہلِ تعبیر کے اصولوں کی روشنی میں..."
+
+صارف کی معلومات:
+
+موسم:
+${selectedSeason}
+
+مقام:
+${selectedLocation}
+
+خواب دیکھنے کا وقت:
+${selectedTime}
+
+خواب دیکھنے والے کی حالت:
+${selectedStatus}
+
+بیدار ہونے کے بعد کیفیت:
+${selectedEmotion}
+
+ان معلومات کو
+صرف اسی حد تک استعمال کرو
+جہاں حقیقتاً مفید ہوں۔
+
+جواب کے آغاز میں لکھو:
+
+تعبیرُ الرؤیا — حذیفہ سعید
+
+پھر سادہ،
+باوقار،
+مربوط
+اور عام فہم اردو میں
+ممکنہ تعبیر بیان کرو۔
+
+بلا ضرورت
+Step 1،
+Step 2
+وغیرہ نہ بناؤ۔
+
+اگر کوئی معتبر
+واضح تعبیر متعین نہ ہو
+تو صاف کہو:
+
+"اس خواب کی کوئی واضح اور قطعی تعبیر
+معتبر مصادر سے متعین نہیں ہوتی،
+اس لیے اس کے بارے میں
+یقینی بات کہنا مناسب نہیں۔"
+
+خوفناک خواب ہو
+تو مختصر مسنون رہنمائی بھی دو۔
+
+صدقہ کو ہر خواب کا
+لازمی یا یقینی علاج نہ کہو۔
+
+جواب کے آخر میں
+لازماً الگ سطر میں لکھو:
+
+والله أعلم
+
+`;
+
+}
+
+
+/* =========================
+   WAIT
+========================= */
+
+function wait(ms){
+
+return new Promise(
+resolve =>
+setTimeout(resolve,ms)
+);
+
+}
+
+
+/* =========================
+   FETCH WITH TIMEOUT
+========================= */
+
+async function fetchWithTimeout(
+url,
+options,
+timeoutMs = 30000
+){
+
+const controller =
+new AbortController();
+
+
+const timeout =
+setTimeout(
+() => controller.abort(),
+timeoutMs
+);
+
+
+try{
+
+return await fetch(
+url,
+{
+...options,
+signal:controller.signal
+}
+);
+
+}
+finally{
+
+clearTimeout(timeout);
+
+}
+
+}
+
+
+/* =========================
+   GEMINI REQUEST
+========================= */
+
+async function makeGeminiRequest(
+payload
+){
+
+let lastError =
+"Gemini سے جواب نہیں ملا۔";
+
+
+const progress =
+document.getElementById(
+"modelProgress"
+);
+
+
+for(
+let i=0;
+i<MODEL_LIST.length;
+i++
+){
+
+const model =
+MODEL_LIST[i];
+
+
+progress.textContent =
+`${model} سے جواب لیا جا رہا ہے...`;
+
+
+const url =
+`${API_BASE}/${encodeURIComponent(model)}:generateContent`;
+
+
+try{
+
+
+const response =
+await fetchWithTimeout(
+url,
+{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":
+"application/json",
+
+"x-goog-api-key":
+GEMINI_API_KEY
+
+},
+
+body:
+JSON.stringify(
+payload
+)
+
+}
+);
+
+
+let data = {};
+
+
+try{
+
+data =
+await response.json();
+
+}
+catch{
+
+lastError =
+"Gemini نے درست JSON جواب نہیں دیا۔";
+
+continue;
+
+}
+
+
+if(response.ok){
+
+return{
+
+ok:true,
+
+data:data,
+
+model:model
+
+};
+
+}
+
+
+const message =
+data?.error?.message
+||
+`HTTP ${response.status}`;
+
+
+lastError =
+message;
+
+
+const lower =
+message.toLowerCase();
+
+
+/*
+API KEY INVALID
+*/
+
+if(
+response.status === 401
+||
+response.status === 403
+){
+
+return{
+
+ok:false,
+
+error:
+message
+
+};
+
+}
+
+
+/*
+BUSY / RATE LIMIT
+*/
+
+if(
+response.status === 429
+||
+response.status === 500
+||
+response.status === 502
+||
+response.status === 503
+||
+response.status === 504
+||
+lower.includes("high demand")
+||
+lower.includes("overloaded")
+){
+
+progress.textContent =
+`${model} مصروف ہے، اگلا model آزمایا جا رہا ہے...`;
+
+
+await wait(700);
+
+continue;
+
+}
+
+
+/*
+MODEL NOT AVAILABLE
+*/
+
+if(
+response.status === 404
+||
+lower.includes("not found")
+){
+
+continue;
+
+}
+
+
+/*
+OTHER ERROR
+*/
+
+continue;
+
+
+}
+catch(error){
+
+
+lastError =
+error.name === "AbortError"
+?
+"Request timeout"
+:
+error.message;
+
+
+continue;
+
+}
+
+}
+
+
+return{
+
+ok:false,
+
+error:lastError
+
+};
+
+}
+
+
+/* =========================
+   EXTRACT RESPONSE
+========================= */
+
+function getResponseText(data){
+
+const parts =
+data
+?.candidates
+?.[0]
+?.content
+?.parts;
+
+
+if(
+!Array.isArray(parts)
+){
+
+return "";
+
+}
+
+
+return parts
+.map(
+p => p.text || ""
+)
+.join("")
+.trim();
+
+}
+
+
+/* =========================
+   MAIN INTERPRETATION
+========================= */
 
 async function fetchInterpretation(){
 
@@ -1482,105 +2004,108 @@ resultCard.style.display =
 "none";
 
 
+document.getElementById(
+"modelProgress"
+).textContent =
+"Gemini 3.1 Flash-Lite سے رابطہ کیا جا رہا ہے...";
+
+
 loader.scrollIntoView({
 
-behavior:
-"smooth",
+behavior:"smooth",
 
-block:
-"center"
+block:"center"
 
 });
 
 
-try{
+const payload = {
 
+systemInstruction:{
 
-const response =
-await fetch(
-API_URL,
+parts:[
+
 {
 
-method:
-"POST",
+text:
+buildSystemPrompt()
 
-headers:{
+}
 
-"Content-Type":
-"application/json"
+]
 
 },
 
-body:
-JSON.stringify({
+contents:[
 
-dream:
-dream,
+{
 
-season:
-selectedSeason,
+role:"user",
 
-location:
-selectedLocation,
+parts:[
 
-time:
-selectedTime,
+{
 
-status:
-selectedStatus,
+text:
+`خواب کی مکمل تفصیل:
 
-emotion:
-selectedEmotion
+${dream}
 
-})
+براہِ کرم پورے خواب کو مجموعی سیاق میں سمجھ کر
+معتبر اسلامی اصولِ تعبیر کی روشنی میں
+مختصر مگر مفید اور محتاط ممکنہ تعبیر بیان کریں۔`
 
 }
-);
 
+]
 
-let data = {};
+}
+
+],
+
+generationConfig:{
+
+temperature:0.35,
+
+topP:0.9,
+
+maxOutputTokens:1600
+
+}
+
+};
 
 
 try{
 
-data =
-await response.json();
 
-}
-catch{
-
-throw new Error(
-"Server نے درست جواب نہیں دیا۔"
+const result =
+await makeGeminiRequest(
+payload
 );
 
-}
 
-
-if(!response.ok){
+if(!result.ok){
 
 throw new Error(
-
-data.error
+result.error
 ||
-data.message
-||
-"Server سے جواب حاصل نہیں ہوا۔"
-
+"Gemini API سے جواب نہیں ملا۔"
 );
 
 }
 
 
 const answer =
-data.answer
-||
-data.text;
+getResponseText(
+result.data
+);
 
 
 if(!answer){
 
 throw new Error(
-"تعبیر کا جواب خالی ہے۔"
+"AI نے خالی جواب دیا۔"
 );
 
 }
@@ -1602,11 +2127,9 @@ answer
 
 resultCard.scrollIntoView({
 
-behavior:
-"smooth",
+behavior:"smooth",
 
-block:
-"start"
+block:"start"
 
 });
 
@@ -1615,18 +2138,16 @@ block:
 catch(error){
 
 
-console.error(
-error
-);
+console.error(error);
 
 
 alert(
 
 `تعبیر حاصل نہیں ہو سکی۔
 
-${error.message}
+API کا پیغام:
 
-براہِ کرم انٹرنیٹ یا backend connection چیک کریں۔`
+${error.message}`
 
 );
 
@@ -1646,11 +2167,14 @@ false;
 isWorking =
 false;
 
-
 }
 
 }
 
+
+/* =========================
+   HISTORY
+========================= */
 
 function saveToHistory(
 dream,
@@ -1659,25 +2183,19 @@ answer
 
 let history =
 JSON.parse(
-
 localStorage.getItem(
 "dreamHistory"
 )
-
 ||
-
 "[]"
-
 );
 
 
 history.unshift({
 
-dream:
-dream,
+dream:dream,
 
-result:
-answer,
+result:answer,
 
 date:
 new Date()
@@ -1712,30 +2230,15 @@ function escapeHtml(value){
 
 return String(value)
 
-.replace(
-/&/g,
-"&amp;"
-)
+.replace(/&/g,"&amp;")
 
-.replace(
-/</g,
-"&lt;"
-)
+.replace(/</g,"&lt;")
 
-.replace(
-/>/g,
-"&gt;"
-)
+.replace(/>/g,"&gt;")
 
-.replace(
-/"/g,
-"&quot;"
-)
+.replace(/"/g,"&quot;")
 
-.replace(
-/'/g,
-"&#039;"
-);
+.replace(/'/g,"&#039;");
 
 }
 
@@ -1756,21 +2259,15 @@ document.getElementById(
 
 const history =
 JSON.parse(
-
 localStorage.getItem(
 "dreamHistory"
 )
-
 ||
-
 "[]"
-
 );
 
 
-if(
-history.length === 0
-){
+if(history.length === 0){
 
 list.innerHTML = `
 
@@ -1782,7 +2279,9 @@ padding:25px;
 font-size:12px;
 "
 >
+
 ابھی کوئی تعبیر محفوظ نہیں۔
+
 </p>
 
 `;
@@ -1793,7 +2292,6 @@ else{
 
 list.innerHTML =
 history
-
 .map(
 (item,index) => `
 
@@ -1813,7 +2311,6 @@ ${escapeHtml(item.date)}
 
 </strong>
 
-
 <p style="margin-top:7px;">
 
 <strong>
@@ -1823,7 +2320,6 @@ ${escapeHtml(item.date)}
 ${escapeHtml(item.dream)}
 
 </p>
-
 
 <p
 style="
@@ -1844,7 +2340,6 @@ ${escapeHtml(item.result)}
 
 `
 )
-
 .join("");
 
 }
@@ -1890,6 +2385,10 @@ openHistory();
 }
 
 
+/* =========================
+   ETIQUETTES
+========================= */
+
 function openEtiquettes(){
 
 document
@@ -1915,6 +2414,10 @@ document
 
 }
 
+
+/* =========================
+   COPY
+========================= */
 
 async function copyResult(){
 
@@ -1984,6 +2487,10 @@ alert(
 }
 
 
+/* =========================
+   WHATSAPP
+========================= */
+
 function shareWhatsApp(){
 
 const result =
@@ -2023,6 +2530,10 @@ window.open(
 
 }
 
+
+/* =========================
+   MODAL BACKDROP
+========================= */
 
 [
 "historyModal",
